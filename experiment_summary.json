@@ -1,0 +1,22 @@
+{
+  "architecture": "EfficientNetB0",
+  "pretrained_weights": "imagenet",
+  "classes": 50,
+  "images": 65742,
+  "train": 49305,
+  "validation": 9862,
+  "test": 6575,
+  "recorded_test_accuracy_percent": 92.59,
+  "recorded_top3_accuracy_percent": 98.49,
+  "input_size": [
+    224,
+    224,
+    3
+  ],
+  "input_range": [
+    0,
+    255
+  ],
+  "confidence_threshold_configured": 0.65,
+  "metrics_source": "saved notebook outputs; rounded; not rerun"
+}

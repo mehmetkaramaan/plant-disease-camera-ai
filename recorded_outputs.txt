@@ -1,0 +1,1660 @@
+
+=== CELL 0: Inspect dataset layouts ===
+
+================================================================================
+📁 /kaggle/input/datasets/abdallahalidev/plantvillage-dataset
+================================================================================
+📂 plantvillage-dataset/  (4 directories, 0 files)
+    └── color
+    └── grayscale
+    └── plantvillage dataset
+    └── segmented
+  📂 segmented/  (38 directories, 0 files)
+      └── Apple___Apple_scab
+      └── Apple___Black_rot
+      └── Apple___Cedar_apple_rust
+      └── Apple___healthy
+      └── Blueberry___healthy
+      └── Cherry_(including_sour)___Powdery_mildew
+      └── Cherry_(including_sour)___healthy
+      └── Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+      └── Corn_(maize)___Common_rust_
+      └── Corn_(maize)___Northern_Leaf_Blight
+      └── Corn_(maize)___healthy
+      └── Grape___Black_rot
+      └── Grape___Esca_(Black_Measles)
+      └── Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+      └── Grape___healthy
+      └── ... and 23 more directories
+    📂 Tomato___Late_blight/  (0 directories, 1909 files)
+        📄 File types: .jpg: 1909
+        📄 Example files: ['0003faa8-4b27-4c65-bf42-6d9e352ca1a5___RS_Late.B 4946_final_masked.jpg', '00355ec2-f12c-4015-b8f9-94354f69ce22___RS_Late.B 5311_final_masked.jpg', '005a2c1f-4e15-49e4-9e5c-61dc3ecf9708___RS_Late.B 5096_final_masked.jpg']
+    📂 Tomato___healthy/  (0 directories, 1591 files)
+        📄 File types: .jpg: 1591
+        📄 Example files: ['000146ff-92a4-4db6-90ad-8fce2ae4fddd___GH_HL Leaf 259.1_final_masked.jpg', '000bf685-b305-408b-91f4-37030f8e62db___GH_HL Leaf 308.1_final_masked.jpg', '0031da2a-8edd-468f-a8b1-106657717a32___RS_HL 0105_final_masked.jpg']
+    📂 Grape___healthy/  (0 directories, 423 files)
+        📄 File types: .jpg: 423
+        📄 Example files: ['00e00912-bf75-4cf8-8b7d-ad64b73bea5f___Mt.N.V_HL 6067_final_masked.jpg', '0163a6aa-fbf8-47c5-965f-59b6efe8bfe5___Mt.N.V_HL 6103_final_masked.jpg', '0294ca65-4c29-44be-af28-501df9f715e8___Mt.N.V_HL 6176_final_masked.jpg']
+    📂 Orange___Haunglongbing_(Citrus_greening)/  (0 directories, 5507 files)
+        📄 File types: .jpg: 5507
+        📄 Example files: ['00045d08-898c-40df-ada6-e7579637a1f9___UF.Citrus_HLB_Lab 1690_final_masked.jpg', '000945ae-3cf5-48c2-86a2-a3f1e777f2c7___CREC_HLB 7640_final_masked.jpg', '0022b959-3cf3-4e3a-9ed2-94623183c7fb___CREC_HLB 5510_final_masked.jpg']
+    📂 Soybean___healthy/  (0 directories, 5090 files)
+        📄 File types: .jpg: 5090
+        📄 Example files: ['0007ca44-b81d-475c-b8b5-c226a041f020___RS_HL 6331_final_masked.jpg', '0010d6a1-64f1-4997-99d8-6d86fa629014___RS_HL 6967_final_masked.jpg', '00247bff-26dc-445a-8d11-0b2592787ec3___RS_HL 6869_final_masked.jpg']
+    📂 Squash___Powdery_mildew/  (0 directories, 1835 files)
+        📄 File types: .jpg: 1835
+        📄 Example files: ['0045a100-36d3-45df-b417-d487d6e07eb4___UMD_Powd.M 0003_final_masked.jpg', '0056878d-a244-4653-ad56-7e97080c7fd2___UMD_Powd.M 9962_final_masked.jpg', '0061de03-5f84-413a-b30d-1bb575cf3267___UMD_Powd.M 0415_final_masked.jpg']
+    📂 Potato___healthy/  (0 directories, 152 files)
+        📄 File types: .jpg: 152
+        📄 Example files: ['00fc2ee5-729f-4757-8aeb-65c3355874f2___RS_HL 1864_final_masked.jpg', '03da9931-e514-4cc7-b04a-8f474a133ce5___RS_HL 1830_final_masked.jpg', '04481ca2-f94c-457e-b785-1ac05800b7ec___RS_HL 1930_final_masked.jpg']
+    📂 Corn_(maize)___Northern_Leaf_Blight/  (0 directories, 985 files)
+        📄 File types: .jpg: 985
+        📄 Example files: ['005318c8-a5fa-4420-843b-23bdda7322c2___RS_NLB 3853 copy_final_masked.jpg', '0079c731-80f5-4fea-b6a2-4ff23a7ce139___RS_NLB 4121_final_masked.jpg', '008d9af0-7568-4a67-bb1a-0e915836ddc0___RS_NLB 4165 copy 2_final_masked.jpg']
+    📂 Tomato___Early_blight/  (0 directories, 1000 files)
+        📄 File types: .jpg: 1000
+        📄 Example files: ['0012b9d2-2130-4a06-a834-b1f3af34f57e___RS_Erly.B 8389_final_masked.jpg', '0034a551-9512-44e5-ba6c-827f85ecc688___RS_Erly.B 9432_final_masked.jpg', '004cbe60-8ff9-4965-92df-e86694d5e9ba___RS_Erly.B 8253_final_masked.jpg']
+    📂 Tomato___Septoria_leaf_spot/  (0 directories, 1771 files)
+        📄 File types: .jpg: 1771
+        📄 Example files: ['002533c1-722b-44e5-9d2e-91f7747b2543___Keller.St_CG 1831_final_masked.jpg', '0025c401-7785-49c5-8bef-780a8a0d3652___Matt.S_CG 2694_final_masked.jpg', '006c018a-bb21-4a24-b1ff-d8b2864a7354___Matt.S_CG 6192_final_masked.jpg']
+    📂 Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot/  (0 directories, 513 files)
+        📄 File types: .jpg: 513
+        📄 Example files: ['00120a18-ff90-46e4-92fb-2b7a10345bd3___RS_GLSp 9357_final_masked.jpg', '00a20f6f-e8bd-4453-9e25-36ea70feb626___RS_GLSp 4655_final_masked.jpg', '0140764c-6157-4995-9ada-9c10b81af3b8___RS_GLSp 4378_final_masked.jpg']
+    📂 Strawberry___Leaf_scorch/  (0 directories, 1109 files)
+        📄 File types: .jpg: 1109
+        📄 Example files: ['0024203d-6e4c-490f-b9a8-e5926df0b76e___RS_L.Scorch 0795_final_masked.jpg', '0138e78b-9802-43b5-b40e-84c38160418c___RS_L.Scorch 1289_final_masked.jpg', '01647a51-6ee5-4686-8f60-26ebed68fe21___RS_L.Scorch 0130_final_masked.jpg']
+    📂 Peach___healthy/  (0 directories, 360 files)
+        📄 File types: .jpg: 360
+        📄 Example files: ['017d3d86-12bf-4280-8929-10dcd504ac46___Rutg._HL 3671_final_masked.jpg', '02070622-2fd7-40d5-9470-27e513ea8a90___Rutg._HL 3636_final_masked.jpg', '026aa11e-3f67-4951-9533-3c6ceb4c3d59___Rutg._HL 2494_final_masked.jpg']
+    📂 Apple___Apple_scab/  (0 directories, 630 files)
+        📄 File types: .jpg: 630
+        📄 Example files: ['00075aa8-d81a-4184-8541-b692b78d398a___FREC_Scab 3335_final_masked.jpg', '01a66316-0e98-4d3b-a56f-d78752cd043f___FREC_Scab 3003_final_masked.jpg', '01f3deaa-6143-4b6c-9c22-620a46d8be04___FREC_Scab 3112_final_masked.jpg']
+    📂 Tomato___Tomato_Yellow_Leaf_Curl_Virus/  (0 directories, 5357 files)
+        📄 File types: .jpg: 5357
+        📄 Example files: ['00139ae8-d881-4edb-925f-46584b0bd68c___YLCV_NREC 2944_final_masked.jpg', '0036c89d-7743-4895-9fcf-b8d2c1fc8455___YLCV_NREC 0313_final_masked.jpg', '003bce78-28c9-4612-b148-f621e9a23bd4___YLCV_GCREC 5154_final_masked.jpg']
+    📂 Tomato___Bacterial_spot/  (0 directories, 2127 files)
+        📄 File types: .jpg: 2127
+        📄 Example files: ['00416648-be6e-4bd4-bc8d-82f43f8a7240___GCREC_Bact.Sp 3110_final_masked.jpg', '0045ba29-ed1b-43b4-afde-719cc7adefdb___GCREC_Bact.Sp 6254_final_masked.jpg', '00639d29-2d1a-4fcf-9bd3-a2b3109c74c4___UF.GRC_BS_Lab Leaf 1054_final_masked.jpg']
+    📂 Apple___Black_rot/  (0 directories, 621 files)
+        📄 File types: .jpg: 621
+        📄 Example files: ['0090d05d-d797-4c99-abd4-3b9cb323a5fd___JR_FrgE.S 8727_final_masked.jpg', '00e909aa-e3ae-4558-9961-336bb0f35db3___JR_FrgE.S 8593_final_masked.jpg', '0139bc6d-391c-4fd1-bcae-cc74dabfddd7___JR_FrgE.S 2734_final_masked.jpg']
+    📂 Blueberry___healthy/  (0 directories, 1502 files)
+        📄 File types: .jpg: 1502
+        📄 Example files: ['008c85d0-a954-4127-bd26-861dc8a1e6ff___RS_HL 2431_final_masked.jpg', '00fee259-67b7-4dd7-8b36-12503bbdba14___RS_HL 2681_final_masked.jpg', '011405e4-a92a-44b6-9f04-10fec28d93f5___RS_HL 2311_final_masked.jpg']
+    📂 Cherry_(including_sour)___Powdery_mildew/  (0 directories, 1052 files)
+        📄 File types: .jpg: 1052
+        📄 Example files: ['00705aa7-5ea2-4419-9440-8ba65e108eb9___FREC_Pwd.M 0267_final_masked.jpg', '00b7df55-c789-43d6-a02e-a579ac9d07e6___FREC_Pwd.M 4748_final_masked.jpg', '00d12ac0-a293-47e0-a4c6-a80f37204c39___FREC_Pwd.M 4812_final_masked.jpg']
+    📂 Peach___Bacterial_spot/  (0 directories, 2297 files)
+        📄 File types: .jpg: 2297
+        📄 Example files: ['00130039-8425-42e9-9dd9-15aead7271ff___Rut._Bact.S 3421_final_masked.jpg', '002eddd0-b6b3-474c-be08-423e53e24f82___Rutg._Bact.S 1955_final_masked.jpg', '00359c66-5d75-40ce-a5b7-6ef05959d2d2___Rut._Bact.S 1381_final_masked.jpg']
+    📂 Apple___Cedar_apple_rust/  (0 directories, 275 files)
+        📄 File types: .jpg: 275
+        📄 Example files: ['025b2b9a-0ec4-4132-96ac-7f2832d0db4a___FREC_C.Rust 3655_final_masked.jpg', '0321e067-d13b-47d0-b3a6-76ba6f357d02___FREC_C.Rust 3667_final_masked.jpg', '0340baaa-e9cc-4c04-8f9b-c204180d9ae3___FREC_C.Rust 3805_final_masked.jpg']
+    📂 Tomato___Target_Spot/  (0 directories, 1404 files)
+        📄 File types: .jpg: 1404
+        📄 Example files: ['002213fb-b620-4593-b9ac-6a6cc119b100___Com.G_TgS_FL 8360_final_masked.jpg', '003a5321-0430-42dd-a38d-30ac4563f4ba___Com.G_TgS_FL 8121_final_masked.jpg', '0044d10f-7062-4655-8abd-9fffc5b2f152___Com.G_TgS_FL 7908_final_masked.jpg']
+    📂 Pepper,_bell___healthy/  (0 directories, 1478 files)
+        📄 File types: .jpg: 1478
+        📄 Example files: ['00100ffa-095e-4881-aebf-61fe5af7226e___JR_HL 7886_final_masked.jpg', '00208a93-7687-4e8c-b79e-3138687e0f38___JR_HL 7955_final_masked.jpg', '002f87b7-e1a5-49e5-a422-bb423630ded5___JR_HL 8068_final_masked.jpg']
+    📂 Grape___Leaf_blight_(Isariopsis_Leaf_Spot)/  (0 directories, 1076 files)
+        📄 File types: .jpg: 1076
+        📄 Example files: ['0001aa74-bbd7-433b-a900-1dccab39d521___FAM_L.Blight 4508_final_masked.jpg', '0012e1ee-fde3-478f-ab27-18648feb2b05___FAM_L.Blight 1647_final_masked.jpg', '002e4d32-15cf-4350-bfba-dde7c8992392___FAM_L.Blight 4740_final_masked.jpg']
+    📂 Potato___Late_blight/  (0 directories, 1000 files)
+        📄 File types: .jpg: 1000
+        📄 Example files: ['0051e5e8-d1c4-4a84-bf3a-a426cdad6285___RS_LB 4640_final_masked.jpg', '00695906-210d-4a9d-822e-986a17384115___RS_LB 4026_final_masked.jpg', '006cc01a-1888-4326-9b62-a65cb55a6377___RS_LB 5207_final_masked.jpg']
+    📂 Tomato___Tomato_mosaic_virus/  (0 directories, 373 files)
+        📄 File types: .jpg: 373
+        📄 Example files: ['000ec6ea-9063-4c33-8abe-d58ca8a88878___PSU_CG 2169_final_masked.jpg', '006e354b-c054-4b72-a83c-e3feb038942e___PSU_CG 2330_final_masked.jpg', '00c07a77-15e6-4815-92d4-8d1e1afb7f3c___PSU_CG 2052_final_masked.jpg']
+    📂 Strawberry___healthy/  (0 directories, 456 files)
+        📄 File types: .jpg: 456
+        📄 Example files: ['00166615-5e7b-4318-8957-5e50df335ee8___RS_HL 1785_final_masked.jpg', '00532378-bfb2-4d3b-8b19-903ecc085624___RS_HL 2021_final_masked.jpg', '00e9a277-ca5e-4350-95ce-8b2918b69fb9___RS_HL 4667_final_masked.jpg']
+    📂 Apple___healthy/  (0 directories, 1645 files)
+        📄 File types: .jpg: 1645
+        📄 Example files: ['0055dd26-23a7-4415-ac61-e0b44ebfaf80___RS_HL 5672_final_masked.jpg', '00907d8b-6ae6-4306-bfd7-d54471981a86___RS_HL 5709_final_masked.jpg', '0098dbd9-286a-4d6a-bf4b-5459d66f88c0___RS_HL 5776_final_masked.jpg']
+    📂 Grape___Black_rot/  (0 directories, 1180 files)
+        📄 File types: .jpg: 1180
+        📄 Example files: ['00090b0f-c140-4e77-8d20-d39f67b75fcc___FAM_B.Rot 0376_final_masked.jpg', '003d09ef-e16c-4e8a-badf-847d46cb3dc0___FAM_B.Rot 3184_final_masked.jpg', '004175d8-dc74-4285-8401-3cc9565730bb___FAM_B.Rot 0626_final_masked.jpg']
+    📂 Potato___Early_blight/  (0 directories, 1000 files)
+        📄 File types: .jpg: 1000
+        📄 Example files: ['001187a0-57ab-4329-baff-e7246a9edeb0___RS_Early.B 8178_final_masked.jpg', '002a55fb-7a3d-4a3a-aca8-ce2d5ebc6925___RS_Early.B 8170_final_masked.jpg', '009c8c31-f22d-4ffd-8f16-189c6f06c577___RS_Early.B 7885_final_masked.jpg']
+    📂 Cherry_(including_sour)___healthy/  (0 directories, 854 files)
+        📄 File types: .jpg: 854
+        📄 Example files: ['0008f3d3-2f85-4973-be9a-1b520b8b59fc___JR_HL 4092_final_masked.jpg', '002efba9-09b3-43de-93b7-5c2460185cde___JR_HL 9655_final_masked.jpg', '0048afb8-b950-4c57-9e72-7e26282327ee___JR_HL 9765_final_masked.jpg']
+    📂 Corn_(maize)___Common_rust_/  (0 directories, 1192 files)
+        📄 File types: .jpg: 1192
+        📄 Example files: ['007f6e89-3e7c-4e6a-8ef6-8058c7133799___RS_Rust 1933_final_masked.jpg', '00ab8410-2b0e-4877-b947-cc3889be8d79___RS_Rust 2562_final_masked.jpg', '00b29f2a-2ee9-4461-a97e-1d8bdf5a1d3e___RS_Rust 1566_final_masked.jpg']
+    📂 Grape___Esca_(Black_Measles)/  (0 directories, 1384 files)
+        📄 File types: .jpg: 1384
+        📄 Example files: ['0075b632-2e34-4e4f-9697-fe2b332b7ef8___FAM_B.Msls 4399_final_masked.jpg', '00b65fe8-cee1-4b68-8ef4-1211814f2845___FAM_B.Msls 3990_final_masked.jpg', '00c247e8-48d2-4a56-a9f3-4eacfb4d85be___FAM_B.Msls 4197_final_masked.jpg']
+    📂 Raspberry___healthy/  (0 directories, 371 files)
+        📄 File types: .jpg: 371
+        📄 Example files: ['00a3fc0e-64cc-4e35-ac2f-aef04fda9b22___Mary_HL 9177_final_masked.jpg', '020e14fb-6016-4d7f-b489-445e0021b58e___Mary_HL 6324_final_masked.jpg', '03a615df-ed85-4ae6-8b41-d5b4c980b76b___Mary_HL 6366_final_masked.jpg']
+    📂 Tomato___Leaf_Mold/  (0 directories, 952 files)
+        📄 File types: .jpg: 952
+        📄 Example files: ['00694db7-3327-45e0-b4da-a8bb7ab6a4b7___Crnl_L.Mold 6923_final_masked.jpg', '0160c3b5-d89e-40e5-a313-49ae1524040a___Crnl_L.Mold 6823_final_masked.jpg', '0185befe-f0b5-4848-9677-f33c2237f4e9___Crnl_L.Mold 8729_final_masked.jpg']
+    📂 Tomato___Spider_mites Two-spotted_spider_mite/  (0 directories, 1676 files)
+        📄 File types: .jpg: 1676
+        📄 Example files: ['002835d1-c18e-4471-aa6e-8d8c29585e9b___Com.G_SpM_FL 8584_final_masked.jpg', '003b7929-a364-4e74-be1c-37c4c0a6ec63___Com.G_SpM_FL 1414_final_masked.jpg', '00bc7858-1dca-4bfb-a828-225f03bd72a5___Com.G_SpM_FL 9455_final_masked.jpg']
+    📂 Pepper,_bell___Bacterial_spot/  (0 directories, 997 files)
+        📄 File types: .jpg: 997
+        📄 Example files: ['0022d6b7-d47c-4ee2-ae9a-392a53f48647___JR_B.Spot 8964_final_masked.jpg', '006adb74-934f-448f-a14f-62181742127b___JR_B.Spot 3395_final_masked.jpg', '00f2e69a-1e56-412d-8a79-fdce794a17e4___JR_B.Spot 3132_final_masked.jpg']
+    📂 Corn_(maize)___healthy/  (0 directories, 1162 files)
+        📄 File types: .jpg: 1162
+        📄 Example files: ['00031d74-076e-4aef-b040-e068cd3576eb___R.S_HL 8315 copy 2_final_masked.jpg', '00665f92-adb0-41eb-bba7-9eeadecfe10e___R.S_HL 8325 copy 2_final_masked.jpg', '01c3bf88-d315-42a3-8fa1-fc80a05c97f1___R.S_HL 8189 copy_final_masked.jpg']
+  📂 grayscale/  (38 directories, 0 files)
+      └── Apple___Apple_scab
+      └── Apple___Black_rot
+      └── Apple___Cedar_apple_rust
+      └── Apple___healthy
+      └── Blueberry___healthy
+      └── Cherry_(including_sour)___Powdery_mildew
+      └── Cherry_(including_sour)___healthy
+      └── Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+      └── Corn_(maize)___Common_rust_
+      └── Corn_(maize)___Northern_Leaf_Blight
+      └── Corn_(maize)___healthy
+      └── Grape___Black_rot
+      └── Grape___Esca_(Black_Measles)
+      └── Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+      └── Grape___healthy
+      └── ... and 23 more directories
+    📂 Tomato___Late_blight/  (0 directories, 1909 files)
+        📄 File types: .jpg: 1908, .jpeg: 1
+        📄 Example files: ['0003faa8-4b27-4c65-bf42-6d9e352ca1a5___RS_Late.B 4946.JPG', '00355ec2-f12c-4015-b8f9-94354f69ce22___RS_Late.B 5311.JPG', '005a2c1f-4e15-49e4-9e5c-61dc3ecf9708___RS_Late.B 5096.JPG']
+    📂 Tomato___healthy/  (0 directories, 1591 files)
+        📄 File types: .jpg: 1591
+        📄 Example files: ['000146ff-92a4-4db6-90ad-8fce2ae4fddd___GH_HL Leaf 259.1.JPG', '000bf685-b305-408b-91f4-37030f8e62db___GH_HL Leaf 308.1.JPG', '0031da2a-8edd-468f-a8b1-106657717a32___RS_HL 0105.JPG']
+    📂 Grape___healthy/  (0 directories, 423 files)
+        📄 File types: .jpg: 423
+        📄 Example files: ['00e00912-bf75-4cf8-8b7d-ad64b73bea5f___Mt.N.V_HL 6067.JPG', '0163a6aa-fbf8-47c5-965f-59b6efe8bfe5___Mt.N.V_HL 6103.JPG', '0294ca65-4c29-44be-af28-501df9f715e8___Mt.N.V_HL 6176.JPG']
+    📂 Orange___Haunglongbing_(Citrus_greening)/  (0 directories, 5507 files)
+        📄 File types: .jpg: 5507
+        📄 Example files: ['00045d08-898c-40df-ada6-e7579637a1f9___UF.Citrus_HLB_Lab 1690.JPG', '000945ae-3cf5-48c2-86a2-a3f1e777f2c7___CREC_HLB 7640.JPG', '0022b959-3cf3-4e3a-9ed2-94623183c7fb___CREC_HLB 5510.JPG']
+    📂 Soybean___healthy/  (0 directories, 5090 files)
+        📄 File types: .jpg: 5090
+        📄 Example files: ['0007ca44-b81d-475c-b8b5-c226a041f020___RS_HL 6331.JPG', '0010d6a1-64f1-4997-99d8-6d86fa629014___RS_HL 6967.JPG', '00247bff-26dc-445a-8d11-0b2592787ec3___RS_HL 6869.JPG']
+    📂 Squash___Powdery_mildew/  (0 directories, 1835 files)
+        📄 File types: .jpg: 1835
+        📄 Example files: ['0045a100-36d3-45df-b417-d487d6e07eb4___UMD_Powd.M 0003.JPG', '0056878d-a244-4653-ad56-7e97080c7fd2___UMD_Powd.M 9962.JPG', '0061de03-5f84-413a-b30d-1bb575cf3267___UMD_Powd.M 0415.JPG']
+    📂 Potato___healthy/  (0 directories, 152 files)
+        📄 File types: .jpg: 152
+        📄 Example files: ['00fc2ee5-729f-4757-8aeb-65c3355874f2___RS_HL 1864.JPG', '03da9931-e514-4cc7-b04a-8f474a133ce5___RS_HL 1830.JPG', '04481ca2-f94c-457e-b785-1ac05800b7ec___RS_HL 1930.JPG']
+    📂 Corn_(maize)___Northern_Leaf_Blight/  (0 directories, 985 files)
+        📄 File types: .jpg: 985
+        📄 Example files: ['005318c8-a5fa-4420-843b-23bdda7322c2___RS_NLB 3853 copy.jpg', '0079c731-80f5-4fea-b6a2-4ff23a7ce139___RS_NLB 4121.JPG', '008d9af0-7568-4a67-bb1a-0e915836ddc0___RS_NLB 4165 copy 2.jpg']
+    📂 Tomato___Early_blight/  (0 directories, 1000 files)
+        📄 File types: .jpg: 1000
+        📄 Example files: ['0012b9d2-2130-4a06-a834-b1f3af34f57e___RS_Erly.B 8389.JPG', '0034a551-9512-44e5-ba6c-827f85ecc688___RS_Erly.B 9432.JPG', '004cbe60-8ff9-4965-92df-e86694d5e9ba___RS_Erly.B 8253.JPG']
+    📂 Tomato___Septoria_leaf_spot/  (0 directories, 1771 files)
+        📄 File types: .jpg: 1771
+        📄 Example files: ['002533c1-722b-44e5-9d2e-91f7747b2543___Keller.St_CG 1831.JPG', '0025c401-7785-49c5-8bef-780a8a0d3652___Matt.S_CG 2694.JPG', '006c018a-bb21-4a24-b1ff-d8b2864a7354___Matt.S_CG 6192.JPG']
+    📂 Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot/  (0 directories, 513 files)
+        📄 File types: .jpg: 513
+        📄 Example files: ['00120a18-ff90-46e4-92fb-2b7a10345bd3___RS_GLSp 9357.JPG', '00a20f6f-e8bd-4453-9e25-36ea70feb626___RS_GLSp 4655.JPG', '0140764c-6157-4995-9ada-9c10b81af3b8___RS_GLSp 4378.JPG']
+    📂 Strawberry___Leaf_scorch/  (0 directories, 1109 files)
+        📄 File types: .jpg: 1109
+        📄 Example files: ['0024203d-6e4c-490f-b9a8-e5926df0b76e___RS_L.Scorch 0795.JPG', '0112c6b2-72cd-402b-89cd-ca052983403e___RS_L.Scorch 1161.JPG', '0138e78b-9802-43b5-b40e-84c38160418c___RS_L.Scorch 1289.JPG']
+    📂 Peach___healthy/  (0 directories, 360 files)
+        📄 File types: .jpg: 360
+        📄 Example files: ['017d3d86-12bf-4280-8929-10dcd504ac46___Rutg._HL 3671.JPG', '02070622-2fd7-40d5-9470-27e513ea8a90___Rutg._HL 3636.JPG', '026aa11e-3f67-4951-9533-3c6ceb4c3d59___Rutg._HL 2494.JPG']
+    📂 Apple___Apple_scab/  (0 directories, 630 files)
+        📄 File types: .jpg: 630
+        📄 Example files: ['00075aa8-d81a-4184-8541-b692b78d398a___FREC_Scab 3335.JPG', '01a66316-0e98-4d3b-a56f-d78752cd043f___FREC_Scab 3003.JPG', '01f3deaa-6143-4b6c-9c22-620a46d8be04___FREC_Scab 3112.JPG']
+    📂 Tomato___Tomato_Yellow_Leaf_Curl_Virus/  (0 directories, 5357 files)
+        📄 File types: .jpg: 5357
+        📄 Example files: ['00139ae8-d881-4edb-925f-46584b0bd68c___YLCV_NREC 2944.JPG', '0036c89d-7743-4895-9fcf-b8d2c1fc8455___YLCV_NREC 0313.JPG', '003bce78-28c9-4612-b148-f621e9a23bd4___YLCV_GCREC 5154.JPG']
+    📂 Tomato___Bacterial_spot/  (0 directories, 2127 files)
+        📄 File types: .jpg: 2127
+        📄 Example files: ['00416648-be6e-4bd4-bc8d-82f43f8a7240___GCREC_Bact.Sp 3110.JPG', '0045ba29-ed1b-43b4-afde-719cc7adefdb___GCREC_Bact.Sp 6254.JPG', '00639d29-2d1a-4fcf-9bd3-a2b3109c74c4___UF.GRC_BS_Lab Leaf 1054.JPG']
+    📂 Apple___Black_rot/  (0 directories, 621 files)
+        📄 File types: .jpg: 621
+        📄 Example files: ['0090d05d-d797-4c99-abd4-3b9cb323a5fd___JR_FrgE.S 8727.JPG', '00e909aa-e3ae-4558-9961-336bb0f35db3___JR_FrgE.S 8593.JPG', '0139bc6d-391c-4fd1-bcae-cc74dabfddd7___JR_FrgE.S 2734.JPG']
+    📂 Blueberry___healthy/  (0 directories, 1502 files)
+        📄 File types: .jpg: 1502
+        📄 Example files: ['008c85d0-a954-4127-bd26-861dc8a1e6ff___RS_HL 2431.JPG', '00fee259-67b7-4dd7-8b36-12503bbdba14___RS_HL 2681.JPG', '011405e4-a92a-44b6-9f04-10fec28d93f5___RS_HL 2311.JPG']
+    📂 Cherry_(including_sour)___Powdery_mildew/  (0 directories, 1052 files)
+        📄 File types: .jpg: 1052
+        📄 Example files: ['00705aa7-5ea2-4419-9440-8ba65e108eb9___FREC_Pwd.M 0267.JPG', '00b7df55-c789-43d6-a02e-a579ac9d07e6___FREC_Pwd.M 4748.JPG', '00d12ac0-a293-47e0-a4c6-a80f37204c39___FREC_Pwd.M 4812.JPG']
+    📂 Peach___Bacterial_spot/  (0 directories, 2297 files)
+        📄 File types: .jpg: 2297
+        📄 Example files: ['00130039-8425-42e9-9dd9-15aead7271ff___Rut._Bact.S 3421.JPG', '002eddd0-b6b3-474c-be08-423e53e24f82___Rutg._Bact.S 1955.JPG', '00359c66-5d75-40ce-a5b7-6ef05959d2d2___Rut._Bact.S 1381.JPG']
+    📂 Apple___Cedar_apple_rust/  (0 directories, 275 files)
+        📄 File types: .jpg: 275
+        📄 Example files: ['025b2b9a-0ec4-4132-96ac-7f2832d0db4a___FREC_C.Rust 3655.JPG', '0321e067-d13b-47d0-b3a6-76ba6f357d02___FREC_C.Rust 3667.JPG', '0340baaa-e9cc-4c04-8f9b-c204180d9ae3___FREC_C.Rust 3805.JPG']
+    📂 Tomato___Target_Spot/  (0 directories, 1404 files)
+        📄 File types: .jpg: 1404
+        📄 Example files: ['002213fb-b620-4593-b9ac-6a6cc119b100___Com.G_TgS_FL 8360.JPG', '003a5321-0430-42dd-a38d-30ac4563f4ba___Com.G_TgS_FL 8121.JPG', '0044d10f-7062-4655-8abd-9fffc5b2f152___Com.G_TgS_FL 7908.JPG']
+    📂 Pepper,_bell___healthy/  (0 directories, 1478 files)
+        📄 File types: .jpg: 1477, .png: 1
+        📄 Example files: ['00100ffa-095e-4881-aebf-61fe5af7226e___JR_HL 7886.JPG', '00208a93-7687-4e8c-b79e-3138687e0f38___JR_HL 7955.JPG', '002f87b7-e1a5-49e5-a422-bb423630ded5___JR_HL 8068.JPG']
+    📂 Grape___Leaf_blight_(Isariopsis_Leaf_Spot)/  (0 directories, 1076 files)
+        📄 File types: .jpg: 1076
+        📄 Example files: ['0001aa74-bbd7-433b-a900-1dccab39d521___FAM_L.Blight 4508.JPG', '0012e1ee-fde3-478f-ab27-18648feb2b05___FAM_L.Blight 1647.JPG', '002e4d32-15cf-4350-bfba-dde7c8992392___FAM_L.Blight 4740.JPG']
+    📂 Potato___Late_blight/  (0 directories, 1000 files)
+        📄 File types: .jpg: 1000
+        📄 Example files: ['0051e5e8-d1c4-4a84-bf3a-a426cdad6285___RS_LB 4640.JPG', '00695906-210d-4a9d-822e-986a17384115___RS_LB 4026.JPG', '006cc01a-1888-4326-9b62-a65cb55a6377___RS_LB 5207.JPG']
+    📂 Tomato___Tomato_mosaic_virus/  (0 directories, 373 files)
+        📄 File types: .jpg: 373
+        📄 Example files: ['000ec6ea-9063-4c33-8abe-d58ca8a88878___PSU_CG 2169.JPG', '006e354b-c054-4b72-a83c-e3feb038942e___PSU_CG 2330.JPG', '00c07a77-15e6-4815-92d4-8d1e1afb7f3c___PSU_CG 2052.JPG']
+    📂 Strawberry___healthy/  (0 directories, 456 files)
+        📄 File types: .jpg: 456
+        📄 Example files: ['00166615-5e7b-4318-8957-5e50df335ee8___RS_HL 1785.JPG', '00532378-bfb2-4d3b-8b19-903ecc085624___RS_HL 2021.JPG', '00e9a277-ca5e-4350-95ce-8b2918b69fb9___RS_HL 4667.JPG']
+    📂 Apple___healthy/  (0 directories, 1645 files)
+        📄 File types: .jpg: 1645
+        📄 Example files: ['0055dd26-23a7-4415-ac61-e0b44ebfaf80___RS_HL 5672.JPG', '00907d8b-6ae6-4306-bfd7-d54471981a86___RS_HL 5709.JPG', '0098dbd9-286a-4d6a-bf4b-5459d66f88c0___RS_HL 5776.JPG']
+    📂 Grape___Black_rot/  (0 directories, 1180 files)
+        📄 File types: .jpg: 1180
+        📄 Example files: ['00090b0f-c140-4e77-8d20-d39f67b75fcc___FAM_B.Rot 0376.JPG', '003d09ef-e16c-4e8a-badf-847d46cb3dc0___FAM_B.Rot 3184.JPG', '004175d8-dc74-4285-8401-3cc9565730bb___FAM_B.Rot 0626.JPG']
+    📂 Potato___Early_blight/  (0 directories, 1000 files)
+        📄 File types: .jpg: 1000
+        📄 Example files: ['001187a0-57ab-4329-baff-e7246a9edeb0___RS_Early.B 8178.JPG', '002a55fb-7a3d-4a3a-aca8-ce2d5ebc6925___RS_Early.B 8170.JPG', '009c8c31-f22d-4ffd-8f16-189c6f06c577___RS_Early.B 7885.JPG']
+    📂 Cherry_(including_sour)___healthy/  (0 directories, 854 files)
+        📄 File types: .jpg: 854
+        📄 Example files: ['0008f3d3-2f85-4973-be9a-1b520b8b59fc___JR_HL 4092.JPG', '002efba9-09b3-43de-93b7-5c2460185cde___JR_HL 9655.JPG', '0048afb8-b950-4c57-9e72-7e26282327ee___JR_HL 9765.JPG']
+    📂 Corn_(maize)___Common_rust_/  (0 directories, 1192 files)
+        📄 File types: .jpg: 1192
+        📄 Example files: ['RS_Rust 1563.JPG', 'RS_Rust 1564.JPG', 'RS_Rust 1565.JPG']
+    📂 Grape___Esca_(Black_Measles)/  (0 directories, 1383 files)
+        📄 File types: .jpg: 1383
+        📄 Example files: ['0075b632-2e34-4e4f-9697-fe2b332b7ef8___FAM_B.Msls 4399.JPG', '00b65fe8-cee1-4b68-8ef4-1211814f2845___FAM_B.Msls 3990.JPG', '00c247e8-48d2-4a56-a9f3-4eacfb4d85be___FAM_B.Msls 4197.JPG']
+    📂 Raspberry___healthy/  (0 directories, 371 files)
+        📄 File types: .jpg: 371
+        📄 Example files: ['00a3fc0e-64cc-4e35-ac2f-aef04fda9b22___Mary_HL 9177.JPG', '020e14fb-6016-4d7f-b489-445e0021b58e___Mary_HL 6324.JPG', '03a615df-ed85-4ae6-8b41-d5b4c980b76b___Mary_HL 6366.JPG']
+    📂 Tomato___Leaf_Mold/  (0 directories, 952 files)
+        📄 File types: .jpg: 952
+        📄 Example files: ['00694db7-3327-45e0-b4da-a8bb7ab6a4b7___Crnl_L.Mold 6923.JPG', '0160c3b5-d89e-40e5-a313-49ae1524040a___Crnl_L.Mold 6823.JPG', '0185befe-f0b5-4848-9677-f33c2237f4e9___Crnl_L.Mold 8729.JPG']
+    📂 Tomato___Spider_mites Two-spotted_spider_mite/  (0 directories, 1676 files)
+        📄 File types: .jpg: 1676
+        📄 Example files: ['002835d1-c18e-4471-aa6e-8d8c29585e9b___Com.G_SpM_FL 8584.JPG', '003b7929-a364-4e74-be1c-37c4c0a6ec63___Com.G_SpM_FL 1414.JPG', '00bc7858-1dca-4bfb-a828-225f03bd72a5___Com.G_SpM_FL 9455.JPG']
+    📂 Pepper,_bell___Bacterial_spot/  (0 directories, 997 files)
+        📄 File types: .jpg: 997
+        📄 Example files: ['0022d6b7-d47c-4ee2-ae9a-392a53f48647___JR_B.Spot 8964.JPG', '006adb74-934f-448f-a14f-62181742127b___JR_B.Spot 3395.JPG', '00f2e69a-1e56-412d-8a79-fdce794a17e4___JR_B.Spot 3132.JPG']
+    📂 Corn_(maize)___healthy/  (0 directories, 1162 files)
+        📄 File types: .jpg: 1162
+        📄 Example files: ['00031d74-076e-4aef-b040-e068cd3576eb___R.S_HL 8315 copy 2.jpg', '00665f92-adb0-41eb-bba7-9eeadecfe10e___R.S_HL 8325 copy 2.jpg', '01c3bf88-d315-42a3-8fa1-fc80a05c97f1___R.S_HL 8189 copy.jpg']
+  📂 plantvillage dataset/  (3 directories, 0 files)
+      └── color
+      └── grayscale
+      └── segmented
+    📂 segmented/  (38 directories, 0 files)
+        └── Apple___Apple_scab
+        └── Apple___Black_rot
+        └── Apple___Cedar_apple_rust
+        └── Apple___healthy
+        └── Blueberry___healthy
+        └── Cherry_(including_sour)___Powdery_mildew
+        └── Cherry_(including_sour)___healthy
+        └── Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+        └── Corn_(maize)___Common_rust_
+        └── Corn_(maize)___Northern_Leaf_Blight
+        └── Corn_(maize)___healthy
+        └── Grape___Black_rot
+        └── Grape___Esca_(Black_Measles)
+        └── Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+        └── Grape___healthy
+        └── ... and 23 more directories
+      📂 Tomato___Late_blight/  (0 directories, 1909 files)
+          📄 File types: .jpg: 1909
+          📄 Example files: ['0003faa8-4b27-4c65-bf42-6d9e352ca1a5___RS_Late.B 4946_final_masked.jpg', '00355ec2-f12c-4015-b8f9-94354f69ce22___RS_Late.B 5311_final_masked.jpg', '005a2c1f-4e15-49e4-9e5c-61dc3ecf9708___RS_Late.B 5096_final_masked.jpg']
+      📂 Tomato___healthy/  (0 directories, 1591 files)
+          📄 File types: .jpg: 1591
+          📄 Example files: ['000146ff-92a4-4db6-90ad-8fce2ae4fddd___GH_HL Leaf 259.1_final_masked.jpg', '000bf685-b305-408b-91f4-37030f8e62db___GH_HL Leaf 308.1_final_masked.jpg', '0031da2a-8edd-468f-a8b1-106657717a32___RS_HL 0105_final_masked.jpg']
+      📂 Grape___healthy/  (0 directories, 423 files)
+          📄 File types: .jpg: 423
+          📄 Example files: ['00e00912-bf75-4cf8-8b7d-ad64b73bea5f___Mt.N.V_HL 6067_final_masked.jpg', '0163a6aa-fbf8-47c5-965f-59b6efe8bfe5___Mt.N.V_HL 6103_final_masked.jpg', '0294ca65-4c29-44be-af28-501df9f715e8___Mt.N.V_HL 6176_final_masked.jpg']
+      📂 Orange___Haunglongbing_(Citrus_greening)/  (0 directories, 5507 files)
+          📄 File types: .jpg: 5507
+          📄 Example files: ['00045d08-898c-40df-ada6-e7579637a1f9___UF.Citrus_HLB_Lab 1690_final_masked.jpg', '000945ae-3cf5-48c2-86a2-a3f1e777f2c7___CREC_HLB 7640_final_masked.jpg', '0022b959-3cf3-4e3a-9ed2-94623183c7fb___CREC_HLB 5510_final_masked.jpg']
+      📂 Soybean___healthy/  (0 directories, 5090 files)
+          📄 File types: .jpg: 5090
+          📄 Example files: ['0007ca44-b81d-475c-b8b5-c226a041f020___RS_HL 6331_final_masked.jpg', '0010d6a1-64f1-4997-99d8-6d86fa629014___RS_HL 6967_final_masked.jpg', '00247bff-26dc-445a-8d11-0b2592787ec3___RS_HL 6869_final_masked.jpg']
+      📂 Squash___Powdery_mildew/  (0 directories, 1835 files)
+          📄 File types: .jpg: 1835
+          📄 Example files: ['0045a100-36d3-45df-b417-d487d6e07eb4___UMD_Powd.M 0003_final_masked.jpg', '0056878d-a244-4653-ad56-7e97080c7fd2___UMD_Powd.M 9962_final_masked.jpg', '0061de03-5f84-413a-b30d-1bb575cf3267___UMD_Powd.M 0415_final_masked.jpg']
+      📂 Potato___healthy/  (0 directories, 152 files)
+          📄 File types: .jpg: 152
+          📄 Example files: ['00fc2ee5-729f-4757-8aeb-65c3355874f2___RS_HL 1864_final_masked.jpg', '03da9931-e514-4cc7-b04a-8f474a133ce5___RS_HL 1830_final_masked.jpg', '04481ca2-f94c-457e-b785-1ac05800b7ec___RS_HL 1930_final_masked.jpg']
+      📂 Corn_(maize)___Northern_Leaf_Blight/  (0 directories, 985 files)
+          📄 File types: .jpg: 985
+          📄 Example files: ['005318c8-a5fa-4420-843b-23bdda7322c2___RS_NLB 3853 copy_final_masked.jpg', '0079c731-80f5-4fea-b6a2-4ff23a7ce139___RS_NLB 4121_final_masked.jpg', '008d9af0-7568-4a67-bb1a-0e915836ddc0___RS_NLB 4165 copy 2_final_masked.jpg']
+      📂 Tomato___Early_blight/  (0 directories, 1000 files)
+          📄 File types: .jpg: 1000
+          📄 Example files: ['0012b9d2-2130-4a06-a834-b1f3af34f57e___RS_Erly.B 8389_final_masked.jpg', '0034a551-9512-44e5-ba6c-827f85ecc688___RS_Erly.B 9432_final_masked.jpg', '004cbe60-8ff9-4965-92df-e86694d5e9ba___RS_Erly.B 8253_final_masked.jpg']
+      📂 Tomato___Septoria_leaf_spot/  (0 directories, 1771 files)
+          📄 File types: .jpg: 1771
+          📄 Example files: ['002533c1-722b-44e5-9d2e-91f7747b2543___Keller.St_CG 1831_final_masked.jpg', '0025c401-7785-49c5-8bef-780a8a0d3652___Matt.S_CG 2694_final_masked.jpg', '006c018a-bb21-4a24-b1ff-d8b2864a7354___Matt.S_CG 6192_final_masked.jpg']
+      📂 Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot/  (0 directories, 513 files)
+          📄 File types: .jpg: 513
+          📄 Example files: ['00120a18-ff90-46e4-92fb-2b7a10345bd3___RS_GLSp 9357_final_masked.jpg', '00a20f6f-e8bd-4453-9e25-36ea70feb626___RS_GLSp 4655_final_masked.jpg', '0140764c-6157-4995-9ada-9c10b81af3b8___RS_GLSp 4378_final_masked.jpg']
+      📂 Strawberry___Leaf_scorch/  (0 directories, 1109 files)
+          📄 File types: .jpg: 1109
+          📄 Example files: ['0024203d-6e4c-490f-b9a8-e5926df0b76e___RS_L.Scorch 0795_final_masked.jpg', '0138e78b-9802-43b5-b40e-84c38160418c___RS_L.Scorch 1289_final_masked.jpg', '01647a51-6ee5-4686-8f60-26ebed68fe21___RS_L.Scorch 0130_final_masked.jpg']
+      📂 Peach___healthy/  (0 directories, 360 files)
+          📄 File types: .jpg: 360
+          📄 Example files: ['017d3d86-12bf-4280-8929-10dcd504ac46___Rutg._HL 3671_final_masked.jpg', '02070622-2fd7-40d5-9470-27e513ea8a90___Rutg._HL 3636_final_masked.jpg', '026aa11e-3f67-4951-9533-3c6ceb4c3d59___Rutg._HL 2494_final_masked.jpg']
+      📂 Apple___Apple_scab/  (0 directories, 630 files)
+          📄 File types: .jpg: 630
+          📄 Example files: ['00075aa8-d81a-4184-8541-b692b78d398a___FREC_Scab 3335_final_masked.jpg', '01a66316-0e98-4d3b-a56f-d78752cd043f___FREC_Scab 3003_final_masked.jpg', '01f3deaa-6143-4b6c-9c22-620a46d8be04___FREC_Scab 3112_final_masked.jpg']
+      📂 Tomato___Tomato_Yellow_Leaf_Curl_Virus/  (0 directories, 5357 files)
+          📄 File types: .jpg: 5357
+          📄 Example files: ['00139ae8-d881-4edb-925f-46584b0bd68c___YLCV_NREC 2944_final_masked.jpg', '0036c89d-7743-4895-9fcf-b8d2c1fc8455___YLCV_NREC 0313_final_masked.jpg', '003bce78-28c9-4612-b148-f621e9a23bd4___YLCV_GCREC 5154_final_masked.jpg']
+      📂 Tomato___Bacterial_spot/  (0 directories, 2127 files)
+          📄 File types: .jpg: 2127
+          📄 Example files: ['00416648-be6e-4bd4-bc8d-82f43f8a7240___GCREC_Bact.Sp 3110_final_masked.jpg', '0045ba29-ed1b-43b4-afde-719cc7adefdb___GCREC_Bact.Sp 6254_final_masked.jpg', '00639d29-2d1a-4fcf-9bd3-a2b3109c74c4___UF.GRC_BS_Lab Leaf 1054_final_masked.jpg']
+      📂 Apple___Black_rot/  (0 directories, 621 files)
+          📄 File types: .jpg: 621
+          📄 Example files: ['0090d05d-d797-4c99-abd4-3b9cb323a5fd___JR_FrgE.S 8727_final_masked.jpg', '00e909aa-e3ae-4558-9961-336bb0f35db3___JR_FrgE.S 8593_final_masked.jpg', '0139bc6d-391c-4fd1-bcae-cc74dabfddd7___JR_FrgE.S 2734_final_masked.jpg']
+      📂 Blueberry___healthy/  (0 directories, 1502 files)
+          📄 File types: .jpg: 1502
+          📄 Example files: ['008c85d0-a954-4127-bd26-861dc8a1e6ff___RS_HL 2431_final_masked.jpg', '00fee259-67b7-4dd7-8b36-12503bbdba14___RS_HL 2681_final_masked.jpg', '011405e4-a92a-44b6-9f04-10fec28d93f5___RS_HL 2311_final_masked.jpg']
+      📂 Cherry_(including_sour)___Powdery_mildew/  (0 directories, 1052 files)
+          📄 File types: .jpg: 1052
+          📄 Example files: ['00705aa7-5ea2-4419-9440-8ba65e108eb9___FREC_Pwd.M 0267_final_masked.jpg', '00b7df55-c789-43d6-a02e-a579ac9d07e6___FREC_Pwd.M 4748_final_masked.jpg', '00d12ac0-a293-47e0-a4c6-a80f37204c39___FREC_Pwd.M 4812_final_masked.jpg']
+      📂 Peach___Bacterial_spot/  (0 directories, 2297 files)
+          📄 File types: .jpg: 2297
+          📄 Example files: ['00130039-8425-42e9-9dd9-15aead7271ff___Rut._Bact.S 3421_final_masked.jpg', '002eddd0-b6b3-474c-be08-423e53e24f82___Rutg._Bact.S 1955_final_masked.jpg', '00359c66-5d75-40ce-a5b7-6ef05959d2d2___Rut._Bact.S 1381_final_masked.jpg']
+      📂 Apple___Cedar_apple_rust/  (0 directories, 275 files)
+          📄 File types: .jpg: 275
+          📄 Example files: ['025b2b9a-0ec4-4132-96ac-7f2832d0db4a___FREC_C.Rust 3655_final_masked.jpg', '0321e067-d13b-47d0-b3a6-76ba6f357d02___FREC_C.Rust 3667_final_masked.jpg', '0340baaa-e9cc-4c04-8f9b-c204180d9ae3___FREC_C.Rust 3805_final_masked.jpg']
+      📂 Tomato___Target_Spot/  (0 directories, 1404 files)
+          📄 File types: .jpg: 1404
+          📄 Example files: ['002213fb-b620-4593-b9ac-6a6cc119b100___Com.G_TgS_FL 8360_final_masked.jpg', '003a5321-0430-42dd-a38d-30ac4563f4ba___Com.G_TgS_FL 8121_final_masked.jpg', '0044d10f-7062-4655-8abd-9fffc5b2f152___Com.G_TgS_FL 7908_final_masked.jpg']
+      📂 Pepper,_bell___healthy/  (0 directories, 1478 files)
+          📄 File types: .jpg: 1478
+          📄 Example files: ['00100ffa-095e-4881-aebf-61fe5af7226e___JR_HL 7886_final_masked.jpg', '00208a93-7687-4e8c-b79e-3138687e0f38___JR_HL 7955_final_masked.jpg', '002f87b7-e1a5-49e5-a422-bb423630ded5___JR_HL 8068_final_masked.jpg']
+      📂 Grape___Leaf_blight_(Isariopsis_Leaf_Spot)/  (0 directories, 1076 files)
+          📄 File types: .jpg: 1076
+          📄 Example files: ['0001aa74-bbd7-433b-a900-1dccab39d521___FAM_L.Blight 4508_final_masked.jpg', '0012e1ee-fde3-478f-ab27-18648feb2b05___FAM_L.Blight 1647_final_masked.jpg', '002e4d32-15cf-4350-bfba-dde7c8992392___FAM_L.Blight 4740_final_masked.jpg']
+      📂 Potato___Late_blight/  (0 directories, 1000 files)
+          📄 File types: .jpg: 1000
+          📄 Example files: ['0051e5e8-d1c4-4a84-bf3a-a426cdad6285___RS_LB 4640_final_masked.jpg', '00695906-210d-4a9d-822e-986a17384115___RS_LB 4026_final_masked.jpg', '006cc01a-1888-4326-9b62-a65cb55a6377___RS_LB 5207_final_masked.jpg']
+      📂 Tomato___Tomato_mosaic_virus/  (0 directories, 373 files)
+          📄 File types: .jpg: 373
+          📄 Example files: ['000ec6ea-9063-4c33-8abe-d58ca8a88878___PSU_CG 2169_final_masked.jpg', '006e354b-c054-4b72-a83c-e3feb038942e___PSU_CG 2330_final_masked.jpg', '00c07a77-15e6-4815-92d4-8d1e1afb7f3c___PSU_CG 2052_final_masked.jpg']
+      📂 Strawberry___healthy/  (0 directories, 456 files)
+          📄 File types: .jpg: 456
+          📄 Example files: ['00166615-5e7b-4318-8957-5e50df335ee8___RS_HL 1785_final_masked.jpg', '00532378-bfb2-4d3b-8b19-903ecc085624___RS_HL 2021_final_masked.jpg', '00e9a277-ca5e-4350-95ce-8b2918b69fb9___RS_HL 4667_final_masked.jpg']
+      📂 Apple___healthy/  (0 directories, 1645 files)
+          📄 File types: .jpg: 1645
+          📄 Example files: ['0055dd26-23a7-4415-ac61-e0b44ebfaf80___RS_HL 5672_final_masked.jpg', '00907d8b-6ae6-4306-bfd7-d54471981a86___RS_HL 5709_final_masked.jpg', '0098dbd9-286a-4d6a-bf4b-5459d66f88c0___RS_HL 5776_final_masked.jpg']
+      📂 Grape___Black_rot/  (0 directories, 1180 files)
+          📄 File types: .jpg: 1180
+          📄 Example files: ['00090b0f-c140-4e77-8d20-d39f67b75fcc___FAM_B.Rot 0376_final_masked.jpg', '003d09ef-e16c-4e8a-badf-847d46cb3dc0___FAM_B.Rot 3184_final_masked.jpg', '004175d8-dc74-4285-8401-3cc9565730bb___FAM_B.Rot 0626_final_masked.jpg']
+      📂 Potato___Early_blight/  (0 directories, 1000 files)
+          📄 File types: .jpg: 1000
+          📄 Example files: ['001187a0-57ab-4329-baff-e7246a9edeb0___RS_Early.B 8178_final_masked.jpg', '002a55fb-7a3d-4a3a-aca8-ce2d5ebc6925___RS_Early.B 8170_final_masked.jpg', '009c8c31-f22d-4ffd-8f16-189c6f06c577___RS_Early.B 7885_final_masked.jpg']
+      📂 Cherry_(including_sour)___healthy/  (0 directories, 854 files)
+          📄 File types: .jpg: 854
+          📄 Example files: ['0008f3d3-2f85-4973-be9a-1b520b8b59fc___JR_HL 4092_final_masked.jpg', '002efba9-09b3-43de-93b7-5c2460185cde___JR_HL 9655_final_masked.jpg', '0048afb8-b950-4c57-9e72-7e26282327ee___JR_HL 9765_final_masked.jpg']
+      📂 Corn_(maize)___Common_rust_/  (0 directories, 1192 files)
+          📄 File types: .jpg: 1192
+          📄 Example files: ['007f6e89-3e7c-4e6a-8ef6-8058c7133799___RS_Rust 1933_final_masked.jpg', '00ab8410-2b0e-4877-b947-cc3889be8d79___RS_Rust 2562_final_masked.jpg', '00b29f2a-2ee9-4461-a97e-1d8bdf5a1d3e___RS_Rust 1566_final_masked.jpg']
+      📂 Grape___Esca_(Black_Measles)/  (0 directories, 1384 files)
+          📄 File types: .jpg: 1384
+          📄 Example files: ['0075b632-2e34-4e4f-9697-fe2b332b7ef8___FAM_B.Msls 4399_final_masked.jpg', '00b65fe8-cee1-4b68-8ef4-1211814f2845___FAM_B.Msls 3990_final_masked.jpg', '00c247e8-48d2-4a56-a9f3-4eacfb4d85be___FAM_B.Msls 4197_final_masked.jpg']
+      📂 Raspberry___healthy/  (0 directories, 371 files)
+          📄 File types: .jpg: 371
+          📄 Example files: ['00a3fc0e-64cc-4e35-ac2f-aef04fda9b22___Mary_HL 9177_final_masked.jpg', '020e14fb-6016-4d7f-b489-445e0021b58e___Mary_HL 6324_final_masked.jpg', '03a615df-ed85-4ae6-8b41-d5b4c980b76b___Mary_HL 6366_final_masked.jpg']
+      📂 Tomato___Leaf_Mold/  (0 directories, 952 files)
+          📄 File types: .jpg: 952
+          📄 Example files: ['00694db7-3327-45e0-b4da-a8bb7ab6a4b7___Crnl_L.Mold 6923_final_masked.jpg', '0160c3b5-d89e-40e5-a313-49ae1524040a___Crnl_L.Mold 6823_final_masked.jpg', '0185befe-f0b5-4848-9677-f33c2237f4e9___Crnl_L.Mold 8729_final_masked.jpg']
+      📂 Tomato___Spider_mites Two-spotted_spider_mite/  (0 directories, 1676 files)
+          📄 File types: .jpg: 1676
+          📄 Example files: ['002835d1-c18e-4471-aa6e-8d8c29585e9b___Com.G_SpM_FL 8584_final_masked.jpg', '003b7929-a364-4e74-be1c-37c4c0a6ec63___Com.G_SpM_FL 1414_final_masked.jpg', '00bc7858-1dca-4bfb-a828-225f03bd72a5___Com.G_SpM_FL 9455_final_masked.jpg']
+      📂 Pepper,_bell___Bacterial_spot/  (0 directories, 997 files)
+          📄 File types: .jpg: 997
+          📄 Example files: ['0022d6b7-d47c-4ee2-ae9a-392a53f48647___JR_B.Spot 8964_final_masked.jpg', '006adb74-934f-448f-a14f-62181742127b___JR_B.Spot 3395_final_masked.jpg', '00f2e69a-1e56-412d-8a79-fdce794a17e4___JR_B.Spot 3132_final_masked.jpg']
+      📂 Corn_(maize)___healthy/  (0 directories, 1162 files)
+          📄 File types: .jpg: 1162
+          📄 Example files: ['00031d74-076e-4aef-b040-e068cd3576eb___R.S_HL 8315 copy 2_final_masked.jpg', '00665f92-adb0-41eb-bba7-9eeadecfe10e___R.S_HL 8325 copy 2_final_masked.jpg', '01c3bf88-d315-42a3-8fa1-fc80a05c97f1___R.S_HL 8189 copy_final_masked.jpg']
+    📂 grayscale/  (38 directories, 0 files)
+        └── Apple___Apple_scab
+        └── Apple___Black_rot
+        └── Apple___Cedar_apple_rust
+        └── Apple___healthy
+        └── Blueberry___healthy
+        └── Cherry_(including_sour)___Powdery_mildew
+        └── Cherry_(including_sour)___healthy
+        └── Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+        └── Corn_(maize)___Common_rust_
+        └── Corn_(maize)___Northern_Leaf_Blight
+        └── Corn_(maize)___healthy
+        └── Grape___Black_rot
+        └── Grape___Esca_(Black_Measles)
+        └── Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+        └── Grape___healthy
+        └── ... and 23 more directories
+      📂 Tomato___Late_blight/  (0 directories, 1909 files)
+          📄 File types: .jpg: 1908, .jpeg: 1
+          📄 Example files: ['0003faa8-4b27-4c65-bf42-6d9e352ca1a5___RS_Late.B 4946.JPG', '00355ec2-f12c-4015-b8f9-94354f69ce22___RS_Late.B 5311.JPG', '005a2c1f-4e15-49e4-9e5c-61dc3ecf9708___RS_Late.B 5096.JPG']
+      📂 Tomato___healthy/  (0 directories, 1591 files)
+          📄 File types: .jpg: 1591
+          📄 Example files: ['000146ff-92a4-4db6-90ad-8fce2ae4fddd___GH_HL Leaf 259.1.JPG', '000bf685-b305-408b-91f4-37030f8e62db___GH_HL Leaf 308.1.JPG', '0031da2a-8edd-468f-a8b1-106657717a32___RS_HL 0105.JPG']
+      📂 Grape___healthy/  (0 directories, 423 files)
+          📄 File types: .jpg: 423
+          📄 Example files: ['00e00912-bf75-4cf8-8b7d-ad64b73bea5f___Mt.N.V_HL 6067.JPG', '0163a6aa-fbf8-47c5-965f-59b6efe8bfe5___Mt.N.V_HL 6103.JPG', '0294ca65-4c29-44be-af28-501df9f715e8___Mt.N.V_HL 6176.JPG']
+      📂 Orange___Haunglongbing_(Citrus_greening)/  (0 directories, 5507 files)
+          📄 File types: .jpg: 5507
+          📄 Example files: ['00045d08-898c-40df-ada6-e7579637a1f9___UF.Citrus_HLB_Lab 1690.JPG', '000945ae-3cf5-48c2-86a2-a3f1e777f2c7___CREC_HLB 7640.JPG', '0022b959-3cf3-4e3a-9ed2-94623183c7fb___CREC_HLB 5510.JPG']
+      📂 Soybean___healthy/  (0 directories, 5090 files)
+          📄 File types: .jpg: 5090
+          📄 Example files: ['0007ca44-b81d-475c-b8b5-c226a041f020___RS_HL 6331.JPG', '0010d6a1-64f1-4997-99d8-6d86fa629014___RS_HL 6967.JPG', '00247bff-26dc-445a-8d11-0b2592787ec3___RS_HL 6869.JPG']
+      📂 Squash___Powdery_mildew/  (0 directories, 1835 files)
+          📄 File types: .jpg: 1835
+          📄 Example files: ['0045a100-36d3-45df-b417-d487d6e07eb4___UMD_Powd.M 0003.JPG', '0056878d-a244-4653-ad56-7e97080c7fd2___UMD_Powd.M 9962.JPG', '0061de03-5f84-413a-b30d-1bb575cf3267___UMD_Powd.M 0415.JPG']
+      📂 Potato___healthy/  (0 directories, 152 files)
+          📄 File types: .jpg: 152
+          📄 Example files: ['00fc2ee5-729f-4757-8aeb-65c3355874f2___RS_HL 1864.JPG', '03da9931-e514-4cc7-b04a-8f474a133ce5___RS_HL 1830.JPG', '04481ca2-f94c-457e-b785-1ac05800b7ec___RS_HL 1930.JPG']
+      📂 Corn_(maize)___Northern_Leaf_Blight/  (0 directories, 985 files)
+          📄 File types: .jpg: 985
+          📄 Example files: ['005318c8-a5fa-4420-843b-23bdda7322c2___RS_NLB 3853 copy.jpg', '0079c731-80f5-4fea-b6a2-4ff23a7ce139___RS_NLB 4121.JPG', '008d9af0-7568-4a67-bb1a-0e915836ddc0___RS_NLB 4165 copy 2.jpg']
+      📂 Tomato___Early_blight/  (0 directories, 1000 files)
+          📄 File types: .jpg: 1000
+          📄 Example files: ['0012b9d2-2130-4a06-a834-b1f3af34f57e___RS_Erly.B 8389.JPG', '0034a551-9512-44e5-ba6c-827f85ecc688___RS_Erly.B 9432.JPG', '004cbe60-8ff9-4965-92df-e86694d5e9ba___RS_Erly.B 8253.JPG']
+      📂 Tomato___Septoria_leaf_spot/  (0 directories, 1771 files)
+          📄 File types: .jpg: 1771
+          📄 Example files: ['002533c1-722b-44e5-9d2e-91f7747b2543___Keller.St_CG 1831.JPG', '0025c401-7785-49c5-8bef-780a8a0d3652___Matt.S_CG 2694.JPG', '006c018a-bb21-4a24-b1ff-d8b2864a7354___Matt.S_CG 6192.JPG']
+      📂 Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot/  (0 directories, 513 files)
+          📄 File types: .jpg: 513
+          📄 Example files: ['00120a18-ff90-46e4-92fb-2b7a10345bd3___RS_GLSp 9357.JPG', '00a20f6f-e8bd-4453-9e25-36ea70feb626___RS_GLSp 4655.JPG', '0140764c-6157-4995-9ada-9c10b81af3b8___RS_GLSp 4378.JPG']
+      📂 Strawberry___Leaf_scorch/  (0 directories, 1109 files)
+          📄 File types: .jpg: 1109
+          📄 Example files: ['0024203d-6e4c-490f-b9a8-e5926df0b76e___RS_L.Scorch 0795.JPG', '0112c6b2-72cd-402b-89cd-ca052983403e___RS_L.Scorch 1161.JPG', '0138e78b-9802-43b5-b40e-84c38160418c___RS_L.Scorch 1289.JPG']
+      📂 Peach___healthy/  (0 directories, 360 files)
+          📄 File types: .jpg: 360
+          📄 Example files: ['017d3d86-12bf-4280-8929-10dcd504ac46___Rutg._HL 3671.JPG', '02070622-2fd7-40d5-9470-27e513ea8a90___Rutg._HL 3636.JPG', '026aa11e-3f67-4951-9533-3c6ceb4c3d59___Rutg._HL 2494.JPG']
+      📂 Apple___Apple_scab/  (0 directories, 630 files)
+          📄 File types: .jpg: 630
+          📄 Example files: ['00075aa8-d81a-4184-8541-b692b78d398a___FREC_Scab 3335.JPG', '01a66316-0e98-4d3b-a56f-d78752cd043f___FREC_Scab 3003.JPG', '01f3deaa-6143-4b6c-9c22-620a46d8be04___FREC_Scab 3112.JPG']
+      📂 Tomato___Tomato_Yellow_Leaf_Curl_Virus/  (0 directories, 5357 files)
+          📄 File types: .jpg: 5357
+          📄 Example files: ['00139ae8-d881-4edb-925f-46584b0bd68c___YLCV_NREC 2944.JPG', '0036c89d-7743-4895-9fcf-b8d2c1fc8455___YLCV_NREC 0313.JPG', '003bce78-28c9-4612-b148-f621e9a23bd4___YLCV_GCREC 5154.JPG']
+      📂 Tomato___Bacterial_spot/  (0 directories, 2127 files)
+          📄 File types: .jpg: 2127
+          📄 Example files: ['00416648-be6e-4bd4-bc8d-82f43f8a7240___GCREC_Bact.Sp 3110.JPG', '0045ba29-ed1b-43b4-afde-719cc7adefdb___GCREC_Bact.Sp 6254.JPG', '00639d29-2d1a-4fcf-9bd3-a2b3109c74c4___UF.GRC_BS_Lab Leaf 1054.JPG']
+      📂 Apple___Black_rot/  (0 directories, 621 files)
+          📄 File types: .jpg: 621
+          📄 Example files: ['0090d05d-d797-4c99-abd4-3b9cb323a5fd___JR_FrgE.S 8727.JPG', '00e909aa-e3ae-4558-9961-336bb0f35db3___JR_FrgE.S 8593.JPG', '0139bc6d-391c-4fd1-bcae-cc74dabfddd7___JR_FrgE.S 2734.JPG']
+      📂 Blueberry___healthy/  (0 directories, 1502 files)
+          📄 File types: .jpg: 1502
+          📄 Example files: ['008c85d0-a954-4127-bd26-861dc8a1e6ff___RS_HL 2431.JPG', '00fee259-67b7-4dd7-8b36-12503bbdba14___RS_HL 2681.JPG', '011405e4-a92a-44b6-9f04-10fec28d93f5___RS_HL 2311.JPG']
+      📂 Cherry_(including_sour)___Powdery_mildew/  (0 directories, 1052 files)
+          📄 File types: .jpg: 1052
+          📄 Example files: ['00705aa7-5ea2-4419-9440-8ba65e108eb9___FREC_Pwd.M 0267.JPG', '00b7df55-c789-43d6-a02e-a579ac9d07e6___FREC_Pwd.M 4748.JPG', '00d12ac0-a293-47e0-a4c6-a80f37204c39___FREC_Pwd.M 4812.JPG']
+      📂 Peach___Bacterial_spot/  (0 directories, 2297 files)
+          📄 File types: .jpg: 2297
+          📄 Example files: ['00130039-8425-42e9-9dd9-15aead7271ff___Rut._Bact.S 3421.JPG', '002eddd0-b6b3-474c-be08-423e53e24f82___Rutg._Bact.S 1955.JPG', '00359c66-5d75-40ce-a5b7-6ef05959d2d2___Rut._Bact.S 1381.JPG']
+      📂 Apple___Cedar_apple_rust/  (0 directories, 275 files)
+          📄 File types: .jpg: 275
+          📄 Example files: ['025b2b9a-0ec4-4132-96ac-7f2832d0db4a___FREC_C.Rust 3655.JPG', '0321e067-d13b-47d0-b3a6-76ba6f357d02___FREC_C.Rust 3667.JPG', '0340baaa-e9cc-4c04-8f9b-c204180d9ae3___FREC_C.Rust 3805.JPG']
+      📂 Tomato___Target_Spot/  (0 directories, 1404 files)
+          📄 File types: .jpg: 1404
+          📄 Example files: ['002213fb-b620-4593-b9ac-6a6cc119b100___Com.G_TgS_FL 8360.JPG', '003a5321-0430-42dd-a38d-30ac4563f4ba___Com.G_TgS_FL 8121.JPG', '0044d10f-7062-4655-8abd-9fffc5b2f152___Com.G_TgS_FL 7908.JPG']
+      📂 Pepper,_bell___healthy/  (0 directories, 1478 files)
+          📄 File types: .jpg: 1477, .png: 1
+          📄 Example files: ['00100ffa-095e-4881-aebf-61fe5af7226e___JR_HL 7886.JPG', '00208a93-7687-4e8c-b79e-3138687e0f38___JR_HL 7955.JPG', '002f87b7-e1a5-49e5-a422-bb423630ded5___JR_HL 8068.JPG']
+      📂 Grape___Leaf_blight_(Isariopsis_Leaf_Spot)/  (0 directories, 1076 files)
+          📄 File types: .jpg: 1076
+          📄 Example files: ['0001aa74-bbd7-433b-a900-1dccab39d521___FAM_L.Blight 4508.JPG', '0012e1ee-fde3-478f-ab27-18648feb2b05___FAM_L.Blight 1647.JPG', '002e4d32-15cf-4350-bfba-dde7c8992392___FAM_L.Blight 4740.JPG']
+      📂 Potato___Late_blight/  (0 directories, 1000 files)
+          📄 File types: .jpg: 1000
+          📄 Example files: ['0051e5e8-d1c4-4a84-bf3a-a426cdad6285___RS_LB 4640.JPG', '00695906-210d-4a9d-822e-986a17384115___RS_LB 4026.JPG', '006cc01a-1888-4326-9b62-a65cb55a6377___RS_LB 5207.JPG']
+      📂 Tomato___Tomato_mosaic_virus/  (0 directories, 373 files)
+          📄 File types: .jpg: 373
+          📄 Example files: ['000ec6ea-9063-4c33-8abe-d58ca8a88878___PSU_CG 2169.JPG', '006e354b-c054-4b72-a83c-e3feb038942e___PSU_CG 2330.JPG', '00c07a77-15e6-4815-92d4-8d1e1afb7f3c___PSU_CG 2052.JPG']
+      📂 Strawberry___healthy/  (0 directories, 456 files)
+          📄 File types: .jpg: 456
+          📄 Example files: ['00166615-5e7b-4318-8957-5e50df335ee8___RS_HL 1785.JPG', '00532378-bfb2-4d3b-8b19-903ecc085624___RS_HL 2021.JPG', '00e9a277-ca5e-4350-95ce-8b2918b69fb9___RS_HL 4667.JPG']
+      📂 Apple___healthy/  (0 directories, 1645 files)
+          📄 File types: .jpg: 1645
+          📄 Example files: ['0055dd26-23a7-4415-ac61-e0b44ebfaf80___RS_HL 5672.JPG', '00907d8b-6ae6-4306-bfd7-d54471981a86___RS_HL 5709.JPG', '0098dbd9-286a-4d6a-bf4b-5459d66f88c0___RS_HL 5776.JPG']
+      📂 Grape___Black_rot/  (0 directories, 1180 files)
+          📄 File types: .jpg: 1180
+          📄 Example files: ['00090b0f-c140-4e77-8d20-d39f67b75fcc___FAM_B.Rot 0376.JPG', '003d09ef-e16c-4e8a-badf-847d46cb3dc0___FAM_B.Rot 3184.JPG', '004175d8-dc74-4285-8401-3cc9565730bb___FAM_B.Rot 0626.JPG']
+      📂 Potato___Early_blight/  (0 directories, 1000 files)
+          📄 File types: .jpg: 1000
+          📄 Example files: ['001187a0-57ab-4329-baff-e7246a9edeb0___RS_Early.B 8178.JPG', '002a55fb-7a3d-4a3a-aca8-ce2d5ebc6925___RS_Early.B 8170.JPG', '009c8c31-f22d-4ffd-8f16-189c6f06c577___RS_Early.B 7885.JPG']
+      📂 Cherry_(including_sour)___healthy/  (0 directories, 854 files)
+          📄 File types: .jpg: 854
+          📄 Example files: ['0008f3d3-2f85-4973-be9a-1b520b8b59fc___JR_HL 4092.JPG', '002efba9-09b3-43de-93b7-5c2460185cde___JR_HL 9655.JPG', '0048afb8-b950-4c57-9e72-7e26282327ee___JR_HL 9765.JPG']
+      📂 Corn_(maize)___Common_rust_/  (0 directories, 1192 files)
+          📄 File types: .jpg: 1192
+          📄 Example files: ['RS_Rust 1563.JPG', 'RS_Rust 1564.JPG', 'RS_Rust 1565.JPG']
+      📂 Grape___Esca_(Black_Measles)/  (0 directories, 1383 files)
+          📄 File types: .jpg: 1383
+          📄 Example files: ['0075b632-2e34-4e4f-9697-fe2b332b7ef8___FAM_B.Msls 4399.JPG', '00b65fe8-cee1-4b68-8ef4-1211814f2845___FAM_B.Msls 3990.JPG', '00c247e8-48d2-4a56-a9f3-4eacfb4d85be___FAM_B.Msls 4197.JPG']
+      📂 Raspberry___healthy/  (0 directories, 371 files)
+          📄 File types: .jpg: 371
+          📄 Example files: ['00a3fc0e-64cc-4e35-ac2f-aef04fda9b22___Mary_HL 9177.JPG', '020e14fb-6016-4d7f-b489-445e0021b58e___Mary_HL 6324.JPG', '03a615df-ed85-4ae6-8b41-d5b4c980b76b___Mary_HL 6366.JPG']
+      📂 Tomato___Leaf_Mold/  (0 directories, 952 files)
+          📄 File types: .jpg: 952
+          📄 Example files: ['00694db7-3327-45e0-b4da-a8bb7ab6a4b7___Crnl_L.Mold 6923.JPG', '0160c3b5-d89e-40e5-a313-49ae1524040a___Crnl_L.Mold 6823.JPG', '0185befe-f0b5-4848-9677-f33c2237f4e9___Crnl_L.Mold 8729.JPG']
+      📂 Tomato___Spider_mites Two-spotted_spider_mite/  (0 directories, 1676 files)
+          📄 File types: .jpg: 1676
+          📄 Example files: ['002835d1-c18e-4471-aa6e-8d8c29585e9b___Com.G_SpM_FL 8584.JPG', '003b7929-a364-4e74-be1c-37c4c0a6ec63___Com.G_SpM_FL 1414.JPG', '00bc7858-1dca-4bfb-a828-225f03bd72a5___Com.G_SpM_FL 9455.JPG']
+      📂 Pepper,_bell___Bacterial_spot/  (0 directories, 997 files)
+          📄 File types: .jpg: 997
+          📄 Example files: ['0022d6b7-d47c-4ee2-ae9a-392a53f48647___JR_B.Spot 8964.JPG', '006adb74-934f-448f-a14f-62181742127b___JR_B.Spot 3395.JPG', '00f2e69a-1e56-412d-8a79-fdce794a17e4___JR_B.Spot 3132.JPG']
+      📂 Corn_(maize)___healthy/  (0 directories, 1162 files)
+          📄 File types: .jpg: 1162
+          📄 Example files: ['00031d74-076e-4aef-b040-e068cd3576eb___R.S_HL 8315 copy 2.jpg', '00665f92-adb0-41eb-bba7-9eeadecfe10e___R.S_HL 8325 copy 2.jpg', '01c3bf88-d315-42a3-8fa1-fc80a05c97f1___R.S_HL 8189 copy.jpg']
+    📂 color/  (38 directories, 0 files)
+        └── Apple___Apple_scab
+        └── Apple___Black_rot
+        └── Apple___Cedar_apple_rust
+        └── Apple___healthy
+        └── Blueberry___healthy
+        └── Cherry_(including_sour)___Powdery_mildew
+        └── Cherry_(including_sour)___healthy
+        └── Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+        └── Corn_(maize)___Common_rust_
+        └── Corn_(maize)___Northern_Leaf_Blight
+        └── Corn_(maize)___healthy
+        └── Grape___Black_rot
+        └── Grape___Esca_(Black_Measles)
+        └── Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+        └── Grape___healthy
+        └── ... and 23 more directories
+      📂 Tomato___Late_blight/  (0 directories, 1909 files)
+          📄 File types: .jpg: 1908, .jpeg: 1
+          📄 Example files: ['0003faa8-4b27-4c65-bf42-6d9e352ca1a5___RS_Late.B 4946.JPG', '00355ec2-f12c-4015-b8f9-94354f69ce22___RS_Late.B 5311.JPG', '005a2c1f-4e15-49e4-9e5c-61dc3ecf9708___RS_Late.B 5096.JPG']
+      📂 Tomato___healthy/  (0 directories, 1591 files)
+          📄 File types: .jpg: 1591
+          📄 Example files: ['000146ff-92a4-4db6-90ad-8fce2ae4fddd___GH_HL Leaf 259.1.JPG', '000bf685-b305-408b-91f4-37030f8e62db___GH_HL Leaf 308.1.JPG', '0031da2a-8edd-468f-a8b1-106657717a32___RS_HL 0105.JPG']
+      📂 Grape___healthy/  (0 directories, 423 files)
+          📄 File types: .jpg: 423
+          📄 Example files: ['00e00912-bf75-4cf8-8b7d-ad64b73bea5f___Mt.N.V_HL 6067.JPG', '0163a6aa-fbf8-47c5-965f-59b6efe8bfe5___Mt.N.V_HL 6103.JPG', '0294ca65-4c29-44be-af28-501df9f715e8___Mt.N.V_HL 6176.JPG']
+      📂 Orange___Haunglongbing_(Citrus_greening)/  (0 directories, 5507 files)
+          📄 File types: .jpg: 5507
+          📄 Example files: ['00045d08-898c-40df-ada6-e7579637a1f9___UF.Citrus_HLB_Lab 1690.JPG', '000945ae-3cf5-48c2-86a2-a3f1e777f2c7___CREC_HLB 7640.JPG', '0022b959-3cf3-4e3a-9ed2-94623183c7fb___CREC_HLB 5510.JPG']
+      📂 Soybean___healthy/  (0 directories, 5090 files)
+          📄 File types: .jpg: 5090
+          📄 Example files: ['0007ca44-b81d-475c-b8b5-c226a041f020___RS_HL 6331.JPG', '0010d6a1-64f1-4997-99d8-6d86fa629014___RS_HL 6967.JPG', '00247bff-26dc-445a-8d11-0b2592787ec3___RS_HL 6869.JPG']
+      📂 Squash___Powdery_mildew/  (0 directories, 1835 files)
+          📄 File types: .jpg: 1835
+          📄 Example files: ['0045a100-36d3-45df-b417-d487d6e07eb4___UMD_Powd.M 0003.JPG', '0056878d-a244-4653-ad56-7e97080c7fd2___UMD_Powd.M 9962.JPG', '0061de03-5f84-413a-b30d-1bb575cf3267___UMD_Powd.M 0415.JPG']
+      📂 Potato___healthy/  (0 directories, 152 files)
+          📄 File types: .jpg: 152
+          📄 Example files: ['00fc2ee5-729f-4757-8aeb-65c3355874f2___RS_HL 1864.JPG', '03da9931-e514-4cc7-b04a-8f474a133ce5___RS_HL 1830.JPG', '04481ca2-f94c-457e-b785-1ac05800b7ec___RS_HL 1930.JPG']
+      📂 Corn_(maize)___Northern_Leaf_Blight/  (0 directories, 985 files)
+          📄 File types: .jpg: 985
+          📄 Example files: ['005318c8-a5fa-4420-843b-23bdda7322c2___RS_NLB 3853 copy.jpg', '0079c731-80f5-4fea-b6a2-4ff23a7ce139___RS_NLB 4121.JPG', '008d9af0-7568-4a67-bb1a-0e915836ddc0___RS_NLB 4165 copy 2.jpg']
+      📂 Tomato___Early_blight/  (0 directories, 1000 files)
+          📄 File types: .jpg: 1000
+          📄 Example files: ['0012b9d2-2130-4a06-a834-b1f3af34f57e___RS_Erly.B 8389.JPG', '0034a551-9512-44e5-ba6c-827f85ecc688___RS_Erly.B 9432.JPG', '004cbe60-8ff9-4965-92df-e86694d5e9ba___RS_Erly.B 8253.JPG']
+      📂 Tomato___Septoria_leaf_spot/  (0 directories, 1771 files)
+          📄 File types: .jpg: 1771
+          📄 Example files: ['002533c1-722b-44e5-9d2e-91f7747b2543___Keller.St_CG 1831.JPG', '0025c401-7785-49c5-8bef-780a8a0d3652___Matt.S_CG 2694.JPG', '006c018a-bb21-4a24-b1ff-d8b2864a7354___Matt.S_CG 6192.JPG']
+      📂 Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot/  (0 directories, 513 files)
+          📄 File types: .jpg: 513
+          📄 Example files: ['00120a18-ff90-46e4-92fb-2b7a10345bd3___RS_GLSp 9357.JPG', '00a20f6f-e8bd-4453-9e25-36ea70feb626___RS_GLSp 4655.JPG', '0140764c-6157-4995-9ada-9c10b81af3b8___RS_GLSp 4378.JPG']
+      📂 Strawberry___Leaf_scorch/  (0 directories, 1109 files)
+          📄 File types: .jpg: 1109
+          📄 Example files: ['0024203d-6e4c-490f-b9a8-e5926df0b76e___RS_L.Scorch 0795.JPG', '0112c6b2-72cd-402b-89cd-ca052983403e___RS_L.Scorch 1161.JPG', '0138e78b-9802-43b5-b40e-84c38160418c___RS_L.Scorch 1289.JPG']
+      📂 Peach___healthy/  (0 directories, 360 files)
+          📄 File types: .jpg: 360
+          📄 Example files: ['017d3d86-12bf-4280-8929-10dcd504ac46___Rutg._HL 3671.JPG', '02070622-2fd7-40d5-9470-27e513ea8a90___Rutg._HL 3636.JPG', '026aa11e-3f67-4951-9533-3c6ceb4c3d59___Rutg._HL 2494.JPG']
+      📂 Apple___Apple_scab/  (0 directories, 630 files)
+          📄 File types: .jpg: 630
+          📄 Example files: ['00075aa8-d81a-4184-8541-b692b78d398a___FREC_Scab 3335.JPG', '01a66316-0e98-4d3b-a56f-d78752cd043f___FREC_Scab 3003.JPG', '01f3deaa-6143-4b6c-9c22-620a46d8be04___FREC_Scab 3112.JPG']
+      📂 Tomato___Tomato_Yellow_Leaf_Curl_Virus/  (0 directories, 5357 files)
+          📄 File types: .jpg: 5357
+          📄 Example files: ['00139ae8-d881-4edb-925f-46584b0bd68c___YLCV_NREC 2944.JPG', '0036c89d-7743-4895-9fcf-b8d2c1fc8455___YLCV_NREC 0313.JPG', '003bce78-28c9-4612-b148-f621e9a23bd4___YLCV_GCREC 5154.JPG']
+      📂 Tomato___Bacterial_spot/  (0 directories, 2127 files)
+          📄 File types: .jpg: 2127
+          📄 Example files: ['00416648-be6e-4bd4-bc8d-82f43f8a7240___GCREC_Bact.Sp 3110.JPG', '0045ba29-ed1b-43b4-afde-719cc7adefdb___GCREC_Bact.Sp 6254.JPG', '00639d29-2d1a-4fcf-9bd3-a2b3109c74c4___UF.GRC_BS_Lab Leaf 1054.JPG']
+      📂 Apple___Black_rot/  (0 directories, 621 files)
+          📄 File types: .jpg: 621
+          📄 Example files: ['0090d05d-d797-4c99-abd4-3b9cb323a5fd___JR_FrgE.S 8727.JPG', '00e909aa-e3ae-4558-9961-336bb0f35db3___JR_FrgE.S 8593.JPG', '0139bc6d-391c-4fd1-bcae-cc74dabfddd7___JR_FrgE.S 2734.JPG']
+      📂 Blueberry___healthy/  (0 directories, 1502 files)
+          📄 File types: .jpg: 1502
+          📄 Example files: ['008c85d0-a954-4127-bd26-861dc8a1e6ff___RS_HL 2431.JPG', '00fee259-67b7-4dd7-8b36-12503bbdba14___RS_HL 2681.JPG', '011405e4-a92a-44b6-9f04-10fec28d93f5___RS_HL 2311.JPG']
+      📂 Cherry_(including_sour)___Powdery_mildew/  (0 directories, 1052 files)
+          📄 File types: .jpg: 1052
+          📄 Example files: ['00705aa7-5ea2-4419-9440-8ba65e108eb9___FREC_Pwd.M 0267.JPG', '00b7df55-c789-43d6-a02e-a579ac9d07e6___FREC_Pwd.M 4748.JPG', '00d12ac0-a293-47e0-a4c6-a80f37204c39___FREC_Pwd.M 4812.JPG']
+      📂 Peach___Bacterial_spot/  (0 directories, 2297 files)
+          📄 File types: .jpg: 2297
+          📄 Example files: ['00130039-8425-42e9-9dd9-15aead7271ff___Rut._Bact.S 3421.JPG', '002eddd0-b6b3-474c-be08-423e53e24f82___Rutg._Bact.S 1955.JPG', '00359c66-5d75-40ce-a5b7-6ef05959d2d2___Rut._Bact.S 1381.JPG']
+      📂 Apple___Cedar_apple_rust/  (0 directories, 275 files)
+          📄 File types: .jpg: 275
+          📄 Example files: ['025b2b9a-0ec4-4132-96ac-7f2832d0db4a___FREC_C.Rust 3655.JPG', '0321e067-d13b-47d0-b3a6-76ba6f357d02___FREC_C.Rust 3667.JPG', '0340baaa-e9cc-4c04-8f9b-c204180d9ae3___FREC_C.Rust 3805.JPG']
+      📂 Tomato___Target_Spot/  (0 directories, 1404 files)
+          📄 File types: .jpg: 1404
+          📄 Example files: ['002213fb-b620-4593-b9ac-6a6cc119b100___Com.G_TgS_FL 8360.JPG', '003a5321-0430-42dd-a38d-30ac4563f4ba___Com.G_TgS_FL 8121.JPG', '0044d10f-7062-4655-8abd-9fffc5b2f152___Com.G_TgS_FL 7908.JPG']
+      📂 Pepper,_bell___healthy/  (0 directories, 1478 files)
+          📄 File types: .jpg: 1477, .png: 1
+          📄 Example files: ['00100ffa-095e-4881-aebf-61fe5af7226e___JR_HL 7886.JPG', '00208a93-7687-4e8c-b79e-3138687e0f38___JR_HL 7955.JPG', '002f87b7-e1a5-49e5-a422-bb423630ded5___JR_HL 8068.JPG']
+      📂 Grape___Leaf_blight_(Isariopsis_Leaf_Spot)/  (0 directories, 1076 files)
+          📄 File types: .jpg: 1076
+          📄 Example files: ['0001aa74-bbd7-433b-a900-1dccab39d521___FAM_L.Blight 4508.JPG', '0012e1ee-fde3-478f-ab27-18648feb2b05___FAM_L.Blight 1647.JPG', '002e4d32-15cf-4350-bfba-dde7c8992392___FAM_L.Blight 4740.JPG']
+      📂 Potato___Late_blight/  (0 directories, 1000 files)
+          📄 File types: .jpg: 1000
+          📄 Example files: ['0051e5e8-d1c4-4a84-bf3a-a426cdad6285___RS_LB 4640.JPG', '00695906-210d-4a9d-822e-986a17384115___RS_LB 4026.JPG', '006cc01a-1888-4326-9b62-a65cb55a6377___RS_LB 5207.JPG']
+      📂 Tomato___Tomato_mosaic_virus/  (0 directories, 373 files)
+          📄 File types: .jpg: 373
+          📄 Example files: ['000ec6ea-9063-4c33-8abe-d58ca8a88878___PSU_CG 2169.JPG', '006e354b-c054-4b72-a83c-e3feb038942e___PSU_CG 2330.JPG', '00c07a77-15e6-4815-92d4-8d1e1afb7f3c___PSU_CG 2052.JPG']
+      📂 Strawberry___healthy/  (0 directories, 456 files)
+          📄 File types: .jpg: 456
+          📄 Example files: ['00166615-5e7b-4318-8957-5e50df335ee8___RS_HL 1785.JPG', '00532378-bfb2-4d3b-8b19-903ecc085624___RS_HL 2021.JPG', '00e9a277-ca5e-4350-95ce-8b2918b69fb9___RS_HL 4667.JPG']
+      📂 Apple___healthy/  (0 directories, 1645 files)
+          📄 File types: .jpg: 1645
+          📄 Example files: ['0055dd26-23a7-4415-ac61-e0b44ebfaf80___RS_HL 5672.JPG', '00907d8b-6ae6-4306-bfd7-d54471981a86___RS_HL 5709.JPG', '0098dbd9-286a-4d6a-bf4b-5459d66f88c0___RS_HL 5776.JPG']
+      📂 Grape___Black_rot/  (0 directories, 1180 files)
+          📄 File types: .jpg: 1180
+          📄 Example files: ['00090b0f-c140-4e77-8d20-d39f67b75fcc___FAM_B.Rot 0376.JPG', '003d09ef-e16c-4e8a-badf-847d46cb3dc0___FAM_B.Rot 3184.JPG', '004175d8-dc74-4285-8401-3cc9565730bb___FAM_B.Rot 0626.JPG']
+      📂 Potato___Early_blight/  (0 directories, 1000 files)
+          📄 File types: .jpg: 1000
+          📄 Example files: ['001187a0-57ab-4329-baff-e7246a9edeb0___RS_Early.B 8178.JPG', '002a55fb-7a3d-4a3a-aca8-ce2d5ebc6925___RS_Early.B 8170.JPG', '009c8c31-f22d-4ffd-8f16-189c6f06c577___RS_Early.B 7885.JPG']
+      📂 Cherry_(including_sour)___healthy/  (0 directories, 854 files)
+          📄 File types: .jpg: 854
+          📄 Example files: ['0008f3d3-2f85-4973-be9a-1b520b8b59fc___JR_HL 4092.JPG', '002efba9-09b3-43de-93b7-5c2460185cde___JR_HL 9655.JPG', '0048afb8-b950-4c57-9e72-7e26282327ee___JR_HL 9765.JPG']
+      📂 Corn_(maize)___Common_rust_/  (0 directories, 1192 files)
+          📄 File types: .jpg: 1192
+          📄 Example files: ['RS_Rust 1563.JPG', 'RS_Rust 1564.JPG', 'RS_Rust 1565.JPG']
+      📂 Grape___Esca_(Black_Measles)/  (0 directories, 1383 files)
+          📄 File types: .jpg: 1383
+          📄 Example files: ['0075b632-2e34-4e4f-9697-fe2b332b7ef8___FAM_B.Msls 4399.JPG', '00b65fe8-cee1-4b68-8ef4-1211814f2845___FAM_B.Msls 3990.JPG', '00c247e8-48d2-4a56-a9f3-4eacfb4d85be___FAM_B.Msls 4197.JPG']
+      📂 Raspberry___healthy/  (0 directories, 371 files)
+          📄 File types: .jpg: 371
+          📄 Example files: ['00a3fc0e-64cc-4e35-ac2f-aef04fda9b22___Mary_HL 9177.JPG', '020e14fb-6016-4d7f-b489-445e0021b58e___Mary_HL 6324.JPG', '03a615df-ed85-4ae6-8b41-d5b4c980b76b___Mary_HL 6366.JPG']
+      📂 Tomato___Leaf_Mold/  (0 directories, 952 files)
+          📄 File types: .jpg: 952
+          📄 Example files: ['00694db7-3327-45e0-b4da-a8bb7ab6a4b7___Crnl_L.Mold 6923.JPG', '0160c3b5-d89e-40e5-a313-49ae1524040a___Crnl_L.Mold 6823.JPG', '0185befe-f0b5-4848-9677-f33c2237f4e9___Crnl_L.Mold 8729.JPG']
+      📂 Tomato___Spider_mites Two-spotted_spider_mite/  (0 directories, 1676 files)
+          📄 File types: .jpg: 1676
+          📄 Example files: ['002835d1-c18e-4471-aa6e-8d8c29585e9b___Com.G_SpM_FL 8584.JPG', '003b7929-a364-4e74-be1c-37c4c0a6ec63___Com.G_SpM_FL 1414.JPG', '00bc7858-1dca-4bfb-a828-225f03bd72a5___Com.G_SpM_FL 9455.JPG']
+      📂 Pepper,_bell___Bacterial_spot/  (0 directories, 997 files)
+          📄 File types: .jpg: 997
+          📄 Example files: ['0022d6b7-d47c-4ee2-ae9a-392a53f48647___JR_B.Spot 8964.JPG', '006adb74-934f-448f-a14f-62181742127b___JR_B.Spot 3395.JPG', '00f2e69a-1e56-412d-8a79-fdce794a17e4___JR_B.Spot 3132.JPG']
+      📂 Corn_(maize)___healthy/  (0 directories, 1162 files)
+          📄 File types: .jpg: 1162
+          📄 Example files: ['00031d74-076e-4aef-b040-e068cd3576eb___R.S_HL 8315 copy 2.jpg', '00665f92-adb0-41eb-bba7-9eeadecfe10e___R.S_HL 8325 copy 2.jpg', '01c3bf88-d315-42a3-8fa1-fc80a05c97f1___R.S_HL 8189 copy.jpg']
+  📂 color/  (38 directories, 0 files)
+      └── Apple___Apple_scab
+      └── Apple___Black_rot
+      └── Apple___Cedar_apple_rust
+      └── Apple___healthy
+      └── Blueberry___healthy
+      └── Cherry_(including_sour)___Powdery_mildew
+      └── Cherry_(including_sour)___healthy
+      └── Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+      └── Corn_(maize)___Common_rust_
+      └── Corn_(maize)___Northern_Leaf_Blight
+      └── Corn_(maize)___healthy
+      └── Grape___Black_rot
+      └── Grape___Esca_(Black_Measles)
+      └── Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+      └── Grape___healthy
+      └── ... and 23 more directories
+    📂 Tomato___Late_blight/  (0 directories, 1909 files)
+        📄 File types: .jpg: 1908, .jpeg: 1
+        📄 Example files: ['0003faa8-4b27-4c65-bf42-6d9e352ca1a5___RS_Late.B 4946.JPG', '00355ec2-f12c-4015-b8f9-94354f69ce22___RS_Late.B 5311.JPG', '005a2c1f-4e15-49e4-9e5c-61dc3ecf9708___RS_Late.B 5096.JPG']
+    📂 Tomato___healthy/  (0 directories, 1591 files)
+        📄 File types: .jpg: 1591
+        📄 Example files: ['000146ff-92a4-4db6-90ad-8fce2ae4fddd___GH_HL Leaf 259.1.JPG', '000bf685-b305-408b-91f4-37030f8e62db___GH_HL Leaf 308.1.JPG', '0031da2a-8edd-468f-a8b1-106657717a32___RS_HL 0105.JPG']
+    📂 Grape___healthy/  (0 directories, 423 files)
+        📄 File types: .jpg: 423
+        📄 Example files: ['00e00912-bf75-4cf8-8b7d-ad64b73bea5f___Mt.N.V_HL 6067.JPG', '0163a6aa-fbf8-47c5-965f-59b6efe8bfe5___Mt.N.V_HL 6103.JPG', '0294ca65-4c29-44be-af28-501df9f715e8___Mt.N.V_HL 6176.JPG']
+    📂 Orange___Haunglongbing_(Citrus_greening)/  (0 directories, 5507 files)
+        📄 File types: .jpg: 5507
+        📄 Example files: ['00045d08-898c-40df-ada6-e7579637a1f9___UF.Citrus_HLB_Lab 1690.JPG', '000945ae-3cf5-48c2-86a2-a3f1e777f2c7___CREC_HLB 7640.JPG', '0022b959-3cf3-4e3a-9ed2-94623183c7fb___CREC_HLB 5510.JPG']
+    📂 Soybean___healthy/  (0 directories, 5090 files)
+        📄 File types: .jpg: 5090
+        📄 Example files: ['0007ca44-b81d-475c-b8b5-c226a041f020___RS_HL 6331.JPG', '0010d6a1-64f1-4997-99d8-6d86fa629014___RS_HL 6967.JPG', '00247bff-26dc-445a-8d11-0b2592787ec3___RS_HL 6869.JPG']
+    📂 Squash___Powdery_mildew/  (0 directories, 1835 files)
+        📄 File types: .jpg: 1835
+        📄 Example files: ['0045a100-36d3-45df-b417-d487d6e07eb4___UMD_Powd.M 0003.JPG', '0056878d-a244-4653-ad56-7e97080c7fd2___UMD_Powd.M 9962.JPG', '0061de03-5f84-413a-b30d-1bb575cf3267___UMD_Powd.M 0415.JPG']
+    📂 Potato___healthy/  (0 directories, 152 files)
+        📄 File types: .jpg: 152
+        📄 Example files: ['00fc2ee5-729f-4757-8aeb-65c3355874f2___RS_HL 1864.JPG', '03da9931-e514-4cc7-b04a-8f474a133ce5___RS_HL 1830.JPG', '04481ca2-f94c-457e-b785-1ac05800b7ec___RS_HL 1930.JPG']
+    📂 Corn_(maize)___Northern_Leaf_Blight/  (0 directories, 985 files)
+        📄 File types: .jpg: 985
+        📄 Example files: ['005318c8-a5fa-4420-843b-23bdda7322c2___RS_NLB 3853 copy.jpg', '0079c731-80f5-4fea-b6a2-4ff23a7ce139___RS_NLB 4121.JPG', '008d9af0-7568-4a67-bb1a-0e915836ddc0___RS_NLB 4165 copy 2.jpg']
+    📂 Tomato___Early_blight/  (0 directories, 1000 files)
+        📄 File types: .jpg: 1000
+        📄 Example files: ['0012b9d2-2130-4a06-a834-b1f3af34f57e___RS_Erly.B 8389.JPG', '0034a551-9512-44e5-ba6c-827f85ecc688___RS_Erly.B 9432.JPG', '004cbe60-8ff9-4965-92df-e86694d5e9ba___RS_Erly.B 8253.JPG']
+    📂 Tomato___Septoria_leaf_spot/  (0 directories, 1771 files)
+        📄 File types: .jpg: 1771
+        📄 Example files: ['002533c1-722b-44e5-9d2e-91f7747b2543___Keller.St_CG 1831.JPG', '0025c401-7785-49c5-8bef-780a8a0d3652___Matt.S_CG 2694.JPG', '006c018a-bb21-4a24-b1ff-d8b2864a7354___Matt.S_CG 6192.JPG']
+    📂 Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot/  (0 directories, 513 files)
+        📄 File types: .jpg: 513
+        📄 Example files: ['00120a18-ff90-46e4-92fb-2b7a10345bd3___RS_GLSp 9357.JPG', '00a20f6f-e8bd-4453-9e25-36ea70feb626___RS_GLSp 4655.JPG', '0140764c-6157-4995-9ada-9c10b81af3b8___RS_GLSp 4378.JPG']
+    📂 Strawberry___Leaf_scorch/  (0 directories, 1109 files)
+        📄 File types: .jpg: 1109
+        📄 Example files: ['0024203d-6e4c-490f-b9a8-e5926df0b76e___RS_L.Scorch 0795.JPG', '0112c6b2-72cd-402b-89cd-ca052983403e___RS_L.Scorch 1161.JPG', '0138e78b-9802-43b5-b40e-84c38160418c___RS_L.Scorch 1289.JPG']
+    📂 Peach___healthy/  (0 directories, 360 files)
+        📄 File types: .jpg: 360
+        📄 Example files: ['017d3d86-12bf-4280-8929-10dcd504ac46___Rutg._HL 3671.JPG', '02070622-2fd7-40d5-9470-27e513ea8a90___Rutg._HL 3636.JPG', '026aa11e-3f67-4951-9533-3c6ceb4c3d59___Rutg._HL 2494.JPG']
+    📂 Apple___Apple_scab/  (0 directories, 630 files)
+        📄 File types: .jpg: 630
+        📄 Example files: ['00075aa8-d81a-4184-8541-b692b78d398a___FREC_Scab 3335.JPG', '01a66316-0e98-4d3b-a56f-d78752cd043f___FREC_Scab 3003.JPG', '01f3deaa-6143-4b6c-9c22-620a46d8be04___FREC_Scab 3112.JPG']
+    📂 Tomato___Tomato_Yellow_Leaf_Curl_Virus/  (0 directories, 5357 files)
+        📄 File types: .jpg: 5357
+        📄 Example files: ['00139ae8-d881-4edb-925f-46584b0bd68c___YLCV_NREC 2944.JPG', '0036c89d-7743-4895-9fcf-b8d2c1fc8455___YLCV_NREC 0313.JPG', '003bce78-28c9-4612-b148-f621e9a23bd4___YLCV_GCREC 5154.JPG']
+    📂 Tomato___Bacterial_spot/  (0 directories, 2127 files)
+        📄 File types: .jpg: 2127
+        📄 Example files: ['00416648-be6e-4bd4-bc8d-82f43f8a7240___GCREC_Bact.Sp 3110.JPG', '0045ba29-ed1b-43b4-afde-719cc7adefdb___GCREC_Bact.Sp 6254.JPG', '00639d29-2d1a-4fcf-9bd3-a2b3109c74c4___UF.GRC_BS_Lab Leaf 1054.JPG']
+    📂 Apple___Black_rot/  (0 directories, 621 files)
+        📄 File types: .jpg: 621
+        📄 Example files: ['0090d05d-d797-4c99-abd4-3b9cb323a5fd___JR_FrgE.S 8727.JPG', '00e909aa-e3ae-4558-9961-336bb0f35db3___JR_FrgE.S 8593.JPG', '0139bc6d-391c-4fd1-bcae-cc74dabfddd7___JR_FrgE.S 2734.JPG']
+    📂 Blueberry___healthy/  (0 directories, 1502 files)
+        📄 File types: .jpg: 1502
+        📄 Example files: ['008c85d0-a954-4127-bd26-861dc8a1e6ff___RS_HL 2431.JPG', '00fee259-67b7-4dd7-8b36-12503bbdba14___RS_HL 2681.JPG', '011405e4-a92a-44b6-9f04-10fec28d93f5___RS_HL 2311.JPG']
+    📂 Cherry_(including_sour)___Powdery_mildew/  (0 directories, 1052 files)
+        📄 File types: .jpg: 1052
+        📄 Example files: ['00705aa7-5ea2-4419-9440-8ba65e108eb9___FREC_Pwd.M 0267.JPG', '00b7df55-c789-43d6-a02e-a579ac9d07e6___FREC_Pwd.M 4748.JPG', '00d12ac0-a293-47e0-a4c6-a80f37204c39___FREC_Pwd.M 4812.JPG']
+    📂 Peach___Bacterial_spot/  (0 directories, 2297 files)
+        📄 File types: .jpg: 2297
+        📄 Example files: ['00130039-8425-42e9-9dd9-15aead7271ff___Rut._Bact.S 3421.JPG', '002eddd0-b6b3-474c-be08-423e53e24f82___Rutg._Bact.S 1955.JPG', '00359c66-5d75-40ce-a5b7-6ef05959d2d2___Rut._Bact.S 1381.JPG']
+    📂 Apple___Cedar_apple_rust/  (0 directories, 275 files)
+        📄 File types: .jpg: 275
+        📄 Example files: ['025b2b9a-0ec4-4132-96ac-7f2832d0db4a___FREC_C.Rust 3655.JPG', '0321e067-d13b-47d0-b3a6-76ba6f357d02___FREC_C.Rust 3667.JPG', '0340baaa-e9cc-4c04-8f9b-c204180d9ae3___FREC_C.Rust 3805.JPG']
+    📂 Tomato___Target_Spot/  (0 directories, 1404 files)
+        📄 File types: .jpg: 1404
+        📄 Example files: ['002213fb-b620-4593-b9ac-6a6cc119b100___Com.G_TgS_FL 8360.JPG', '003a5321-0430-42dd-a38d-30ac4563f4ba___Com.G_TgS_FL 8121.JPG', '0044d10f-7062-4655-8abd-9fffc5b2f152___Com.G_TgS_FL 7908.JPG']
+    📂 Pepper,_bell___healthy/  (0 directories, 1478 files)
+        📄 File types: .jpg: 1477, .png: 1
+        📄 Example files: ['00100ffa-095e-4881-aebf-61fe5af7226e___JR_HL 7886.JPG', '00208a93-7687-4e8c-b79e-3138687e0f38___JR_HL 7955.JPG', '002f87b7-e1a5-49e5-a422-bb423630ded5___JR_HL 8068.JPG']
+    📂 Grape___Leaf_blight_(Isariopsis_Leaf_Spot)/  (0 directories, 1076 files)
+        📄 File types: .jpg: 1076
+        📄 Example files: ['0001aa74-bbd7-433b-a900-1dccab39d521___FAM_L.Blight 4508.JPG', '0012e1ee-fde3-478f-ab27-18648feb2b05___FAM_L.Blight 1647.JPG', '002e4d32-15cf-4350-bfba-dde7c8992392___FAM_L.Blight 4740.JPG']
+    📂 Potato___Late_blight/  (0 directories, 1000 files)
+        📄 File types: .jpg: 1000
+        📄 Example files: ['0051e5e8-d1c4-4a84-bf3a-a426cdad6285___RS_LB 4640.JPG', '00695906-210d-4a9d-822e-986a17384115___RS_LB 4026.JPG', '006cc01a-1888-4326-9b62-a65cb55a6377___RS_LB 5207.JPG']
+    📂 Tomato___Tomato_mosaic_virus/  (0 directories, 373 files)
+        📄 File types: .jpg: 373
+        📄 Example files: ['000ec6ea-9063-4c33-8abe-d58ca8a88878___PSU_CG 2169.JPG', '006e354b-c054-4b72-a83c-e3feb038942e___PSU_CG 2330.JPG', '00c07a77-15e6-4815-92d4-8d1e1afb7f3c___PSU_CG 2052.JPG']
+    📂 Strawberry___healthy/  (0 directories, 456 files)
+        📄 File types: .jpg: 456
+        📄 Example files: ['00166615-5e7b-4318-8957-5e50df335ee8___RS_HL 1785.JPG', '00532378-bfb2-4d3b-8b19-903ecc085624___RS_HL 2021.JPG', '00e9a277-ca5e-4350-95ce-8b2918b69fb9___RS_HL 4667.JPG']
+    📂 Apple___healthy/  (0 directories, 1645 files)
+        📄 File types: .jpg: 1645
+        📄 Example files: ['0055dd26-23a7-4415-ac61-e0b44ebfaf80___RS_HL 5672.JPG', '00907d8b-6ae6-4306-bfd7-d54471981a86___RS_HL 5709.JPG', '0098dbd9-286a-4d6a-bf4b-5459d66f88c0___RS_HL 5776.JPG']
+    📂 Grape___Black_rot/  (0 directories, 1180 files)
+        📄 File types: .jpg: 1180
+        📄 Example files: ['00090b0f-c140-4e77-8d20-d39f67b75fcc___FAM_B.Rot 0376.JPG', '003d09ef-e16c-4e8a-badf-847d46cb3dc0___FAM_B.Rot 3184.JPG', '004175d8-dc74-4285-8401-3cc9565730bb___FAM_B.Rot 0626.JPG']
+    📂 Potato___Early_blight/  (0 directories, 1000 files)
+        📄 File types: .jpg: 1000
+        📄 Example files: ['001187a0-57ab-4329-baff-e7246a9edeb0___RS_Early.B 8178.JPG', '002a55fb-7a3d-4a3a-aca8-ce2d5ebc6925___RS_Early.B 8170.JPG', '009c8c31-f22d-4ffd-8f16-189c6f06c577___RS_Early.B 7885.JPG']
+    📂 Cherry_(including_sour)___healthy/  (0 directories, 854 files)
+        📄 File types: .jpg: 854
+        📄 Example files: ['0008f3d3-2f85-4973-be9a-1b520b8b59fc___JR_HL 4092.JPG', '002efba9-09b3-43de-93b7-5c2460185cde___JR_HL 9655.JPG', '0048afb8-b950-4c57-9e72-7e26282327ee___JR_HL 9765.JPG']
+    📂 Corn_(maize)___Common_rust_/  (0 directories, 1192 files)
+        📄 File types: .jpg: 1192
+        📄 Example files: ['RS_Rust 1563.JPG', 'RS_Rust 1564.JPG', 'RS_Rust 1565.JPG']
+    📂 Grape___Esca_(Black_Measles)/  (0 directories, 1383 files)
+        📄 File types: .jpg: 1383
+        📄 Example files: ['0075b632-2e34-4e4f-9697-fe2b332b7ef8___FAM_B.Msls 4399.JPG', '00b65fe8-cee1-4b68-8ef4-1211814f2845___FAM_B.Msls 3990.JPG', '00c247e8-48d2-4a56-a9f3-4eacfb4d85be___FAM_B.Msls 4197.JPG']
+    📂 Raspberry___healthy/  (0 directories, 371 files)
+        📄 File types: .jpg: 371
+        📄 Example files: ['00a3fc0e-64cc-4e35-ac2f-aef04fda9b22___Mary_HL 9177.JPG', '020e14fb-6016-4d7f-b489-445e0021b58e___Mary_HL 6324.JPG', '03a615df-ed85-4ae6-8b41-d5b4c980b76b___Mary_HL 6366.JPG']
+    📂 Tomato___Leaf_Mold/  (0 directories, 952 files)
+        📄 File types: .jpg: 952
+        📄 Example files: ['00694db7-3327-45e0-b4da-a8bb7ab6a4b7___Crnl_L.Mold 6923.JPG', '0160c3b5-d89e-40e5-a313-49ae1524040a___Crnl_L.Mold 6823.JPG', '0185befe-f0b5-4848-9677-f33c2237f4e9___Crnl_L.Mold 8729.JPG']
+    📂 Tomato___Spider_mites Two-spotted_spider_mite/  (0 directories, 1676 files)
+        📄 File types: .jpg: 1676
+        📄 Example files: ['002835d1-c18e-4471-aa6e-8d8c29585e9b___Com.G_SpM_FL 8584.JPG', '003b7929-a364-4e74-be1c-37c4c0a6ec63___Com.G_SpM_FL 1414.JPG', '00bc7858-1dca-4bfb-a828-225f03bd72a5___Com.G_SpM_FL 9455.JPG']
+    📂 Pepper,_bell___Bacterial_spot/  (0 directories, 997 files)
+        📄 File types: .jpg: 997
+        📄 Example files: ['0022d6b7-d47c-4ee2-ae9a-392a53f48647___JR_B.Spot 8964.JPG', '006adb74-934f-448f-a14f-62181742127b___JR_B.Spot 3395.JPG', '00f2e69a-1e56-412d-8a79-fdce794a17e4___JR_B.Spot 3132.JPG']
+    📂 Corn_(maize)___healthy/  (0 directories, 1162 files)
+        📄 File types: .jpg: 1162
+        📄 Example files: ['00031d74-076e-4aef-b040-e068cd3576eb___R.S_HL 8315 copy 2.jpg', '00665f92-adb0-41eb-bba7-9eeadecfe10e___R.S_HL 8325 copy 2.jpg', '01c3bf88-d315-42a3-8fa1-fc80a05c97f1___R.S_HL 8189 copy.jpg']
+
+================================================================================
+📁 /kaggle/input/datasets/bloox2/fieldplant
+================================================================================
+📂 fieldplant/  (1 directories, 2 files)
+    └── train
+    📄 File types: .txt: 2
+    📄 Example files: ['README.dataset.txt', 'README.roboflow.txt']
+  📂 train/  (0 directories, 5157 files)
+      📄 File types: .jpg: 5156, .csv: 1
+      📄 Example files: ['Charbon_de_mais-1-_jpg.rf.d83e40544e3be2dac4fd66077d50344a.jpg', 'Charbon_de_mais-2-_jpg.rf.e2c36854e8f83c0f5cdd4ba854405c87.jpg', 'Charbon_de_mais-3-_jpg.rf.7779b177d76937957b4740e3528ad485.jpg']
+
+================================================================================
+📁 /kaggle/input/datasets/bloox2/fieldplant
+================================================================================
+📂 fieldplant/  (1 directories, 2 files)
+    └── train
+    📄 File types: .txt: 2
+    📄 Example files: ['README.dataset.txt', 'README.roboflow.txt']
+  📂 train/  (0 directories, 5157 files)
+      📄 File types: .jpg: 5156, .csv: 1
+      📄 Example files: ['Charbon_de_mais-1-_jpg.rf.d83e40544e3be2dac4fd66077d50344a.jpg', 'Charbon_de_mais-2-_jpg.rf.e2c36854e8f83c0f5cdd4ba854405c87.jpg', 'Charbon_de_mais-3-_jpg.rf.7779b177d76937957b4740e3528ad485.jpg']
+
+================================================================================
+✅ Dataset inspection complete.
+================================================================================
+
+
+=== CELL 1: Inspect FieldPlant annotations ===
+✅ CSV found: /kaggle/input/datasets/bloox2/fieldplant/train/_annotations.csv
+
+Columns: ['filename', 'width', 'height', 'class', 'xmin', 'ymin', 'xmax', 'ymax']
+
+Total rows: 8580
+
+First five rows:
+                                            filename  width  height  \
+0  Manioc_Mosaique-839-_jpg.rf.40e7fcfcbd934d0e5e...   4160    2340   
+1  IMG20221216173252_jpg.rf.4122b742695fa3a71ba20...   3120    3120   
+2  IMG_20221118_093039_956_jpg.rf.4122cbc73b4e7ab...   1920    2560   
+3  Mais_Mildiou_-154-_jpg.rf.41330ed01bd1bc295999...   3120    3120   
+4  Mais_Mildiou_-154-_jpg.rf.41330ed01bd1bc295999...   3120    3120   
+
+                class  xmin  ymin  xmax  ymax  
+0      Cassava Mosaic   172    86  3255  2340  
+1    Corn leaf blight   790   422  3120  3120  
+2  Tomato blight leaf   492    81  1755  1545  
+3    Corn leaf blight    64   752  1742  2771  
+4    Corn leaf blight  2124     0  3120  3099  
+
+Unique values in candidate label/name columns:
+filename: 5156 unique values
+['Manioc_Mosaique-839-_jpg.rf.40e7fcfcbd934d0e5ee1660c83f688c8.jpg'
+ 'IMG20221216173252_jpg.rf.4122b742695fa3a71ba20110f93e6612.jpg'
+ 'IMG_20221118_093039_956_jpg.rf.4122cbc73b4e7abb2afe1ca408a86c71.jpg'
+ 'Mais_Mildiou_-154-_jpg.rf.41330ed01bd1bc295999341822e720b8.jpg'
+ 'Mais_Taches_Chlorotiques-19-_jpg.rf.413f33f64dbd7bca5c8ae61990be364b.jpg'
+ 'Tomate_Taches_Brunes-303-_jpg.rf.40ddb55bb5f0fffff895ae5af43d45c8.jpg'
+ 'Manioc_Mosaique-249-_jpg.rf.40e48f75605576292d9fd32f958a585f.jpg'
+ 'Tomate_Taches_Brunes-733-_jpg.rf.40fb9f9c1f688c75a6f8cb3f51d9124c.jpg'
+ 'Mais_Brulure_-130-_jpg.rf.41094524497460c459eeb9a2f4ac97e7.jpg'
+ 'Manioc_Mosaique-187-_jpg.rf.411001b6875a2776d4583226051ab058.jpg'
+ 'IMG20221216174124_jpg.rf.414b3782d7245dfd35db47f5e6dacb1e.jpg'
+ 'Manioc_Mosaique-820-_jpg.rf.415e16ed37761d22b11755111f907558.jpg'
+ 'Mais_Sains-18-_jpg.rf.416df39d9d03a20cd7451df1af9ec066.jpg'
+ 'Mais_Jaunissement_-44-_jpg.rf.4165b574ebec7414efc1264f82a95ead.jpg'
+ 'IMG20221216174750_jpg.rf.417ef6ba26c7d91061ed18fedc462415.jpg'
+ 'Mais_Brulure_-220-_jpg.rf.414f828bd513b28a8b16378f6c857edc.jpg'
+ 'Manioc_Mosaique-791-_jpg.rf.4175e193edf0c6cba107d8e1bc5d5d63.jpg'
+ 'Tomate_Taches_Brunes-773-_jpg.rf.416705e65259601eb31c6a66a4ba709a.jpg'
+ 'Mais_Sains-45-_jpg.rf.411d3c22cef0e1f79ed492bba204d588.jpg'
+ 'Mais_Striure_-44-_jpg.rf.4153f959b62100539560c92ea853e6bc.jpg'
+ 'Mais_Taches-Brunes_-68-_jpg.rf.411613035bd84115104cb49486f465f8.jpg'
+ 'Mais_brulures_feuilles-21-_jpg.rf.418708550eae5af63435c79cb3cb3ecc.jpg'
+ 'IMG20221216174447_jpg.rf.41905bdc0c56dd650fa2ab36559f5674.jpg'
+ 'Manioc_Mosaique-303-_jpg.rf.418c45aae863344cfc229aa8f27a1572.jpg'
+ 'Manioc_Mosaique-551-_jpg.rf.41b31652bdd274c54a38359a0225e9a7.jpg'
+ 'Tomate_Taches_Brunes-326-_jpg.rf.41bde55ecd82af22c9671a22b8766514.jpg'
+ 'Mais_Jaunissement_-249-_jpg.rf.41cd2dd471d425de202d166038404e20.jpg'
+ 'Mais_Rouille_-5-_jpg.rf.41df190603fcc5849244c3c89a8cae36.jpg'
+ 'Tomate_Taches_Brunes-477-_jpg.rf.41f6e10b8ac54e4ddab624f89d761d21.jpg'
+ 'Mais_Jaunissement_-205-_jpg.rf.41b85c72284d8c962ab038d1b629eac5.jpg']
+class: 27 unique values
+['Cassava Mosaic' 'Corn leaf blight' 'Tomato blight leaf'
+ 'Corn Chlorotic Leaf Spot' 'Tomato Brown Spots' 'Corn Healthy'
+ 'Corn Yellowing' 'Corn Streak' 'Corn Brown Spots' 'Corn rust leaf'
+ 'Tomato leaf yellow virus' 'Cassava Brown Leaf Spot' 'Cassava Root Rot'
+ 'Cassava Healthy' 'Cassava Bacterial Blight' 'Corn Stripe'
+ 'Corn Insects Damages' 'Tomato healthy' 'Corn Violet Decoloration'
+ 'Corn Gray leaf spot' 'Corn Purple Discoloration' 'Corn Mildew'
+ 'Corn Smut' 'Tomato leaf mosaic virus' 'Corn Yellow Spots'
+ 'Tomato bacterial wilt' 'Corn Charcoal']
+
+
+=== CELL 2: Convert bounding boxes to classification crops ===
+Total annotations: 8580
+Unique source images: 5156
+Total classes: 27
+
+Processed: 1000/8580
+Processed: 2000/8580
+Processed: 3000/8580
+Processed: 4000/8580
+Processed: 5000/8580
+Processed: 6000/8580
+Processed: 7000/8580
+Processed: 8000/8580
+
+============================================================
+✅ Conversion complete
+============================================================
+Crops saved: 8579
+Skipped missing images: 0
+Skipped small bounding boxes: 1
+Skipped errors: 0
+
+Images per class:
+  Tomato_Brown_Spots: 1967
+  Cassava_Mosaic: 1896
+  Corn_leaf_blight: 1652
+  Corn_Yellowing: 495
+  Cassava_Healthy: 417
+  Tomato_blight_leaf: 404
+  Tomato_healthy: 279
+  Corn_Streak: 252
+  Corn_Brown_Spots: 220
+  Cassava_Brown_Leaf_Spot: 211
+  Corn_Stripe: 162
+  Corn_Healthy: 152
+  Tomato_leaf_yellow_virus: 115
+  Cassava_Root_Rot: 77
+  Corn_Gray_leaf_spot: 54
+  Corn_rust_leaf: 49
+  Corn_Mildew: 43
+  Corn_Chlorotic_Leaf_Spot: 26
+  Cassava_Bacterial_Blight: 25
+  Tomato_leaf_mosaic_virus: 19
+  Corn_Insects_Damages: 17
+  Corn_Yellow_Spots: 16
+  Corn_Smut: 13
+  Corn_Purple_Discoloration: 8
+  Corn_Violet_Decoloration: 7
+  Tomato_bacterial_wilt: 2
+  Corn_Charcoal: 1
+
+📁 Output directory: /kaggle/working/fieldplant_classification
+Use this directory in the same way as PlantVillage or PlantDoc
+by passing it as base_path to collect_images().
+
+
+=== CELL 3: Configure training ===
+TensorFlow: 2.20.0
+GPU: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+
+
+=== CELL 4: Harmonize class names ===
+
+
+=== CELL 5: Collect image paths ===
+✅ PlantVillage: 54305 images, 38 classes
+✅ FieldPlant: 8515 images, 20 classes
+✅ PlantDoc-train: 2670 images, 28 classes
+✅ PlantDoc-test: 252 images, 27 classes
+
+📊 Total: 65742 images
+🏷️ Total class count: 50
+
+Class distribution (10 least represented classes):
+  cassava_bacterial_blight: 25
+  corn_chlorotic_leaf_spot: 26
+  corn_mildew: 43
+  cassava_root_rot: 77
+  potato_healthy: 152
+  corn_stripe: 162
+  cassava_brown_leaf_spot: 211
+  corn_brown_spots: 220
+  corn_streak: 252
+  apple_rust: 381
+
+
+=== CELL 6: Create internal splits ===
+
+Train: 49305 | Val: 9862 | Test: 6575
+
+
+=== CELL 7: Build augmentation generators ===
+Found 49305 validated image filenames belonging to 50 classes.
+Found 9862 validated image filenames belonging to 50 classes.
+Found 6575 validated image filenames belonging to 50 classes.
+
+
+=== CELL 8: Build EfficientNetB0 ===
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1783293482.069935      23 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 15511 MB memory:  -> device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:00:04.0, compute capability: 6.0
+Downloading data from https://storage.googleapis.com/keras-applications/efficientnetb0_notop.h5
+16705208/16705208 ━━━━━━━━━━━━━━━━━━━━ 0s 0us/step
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_1 (InputLayer)      │ (None, 224, 224, 3)    │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ efficientnetb0 (Functional)     │ (None, 7, 7, 1280)     │     4,049,571 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ global_average_pooling2d        │ (None, 1280)           │             0 │
+│ (GlobalAveragePooling2D)        │                        │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ batch_normalization             │ (None, 1280)           │         5,120 │
+│ (BatchNormalization)            │                        │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout (Dropout)               │ (None, 1280)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 256)            │       327,936 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ batch_normalization_1           │ (None, 256)            │         1,024 │
+│ (BatchNormalization)            │                        │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout_1 (Dropout)             │ (None, 256)            │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_1 (Dense)                 │ (None, 50)             │        12,850 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 4,396,501 (16.77 MB)
+ Trainable params: 343,858 (1.31 MB)
+ Non-trainable params: 4,052,643 (15.46 MB)
+
+
+=== CELL 9: Train the classification head ===
+Epoch 1/10
+I0000 00:00:1783293511.057770      68 device_compiler.h:196] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 684ms/step - accuracy: 0.6238 - loss: 1.6948 - top3_acc: 0.7941
+Epoch 1: val_accuracy improved from None to 0.83959, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 1: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 1200s 763ms/step - accuracy: 0.7226 - loss: 1.2161 - top3_acc: 0.8801 - val_accuracy: 0.8396 - val_loss: 0.5237 - val_top3_acc: 0.9538 - learning_rate: 0.0010
+Epoch 2/10
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 523ms/step - accuracy: 0.7977 - loss: 0.8142 - top3_acc: 0.9353
+Epoch 2: val_accuracy improved from 0.83959 to 0.85378, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 2: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 861s 559ms/step - accuracy: 0.8013 - loss: 0.8058 - top3_acc: 0.9357 - val_accuracy: 0.8538 - val_loss: 0.4756 - val_top3_acc: 0.9540 - learning_rate: 0.0010
+Epoch 3/10
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 511ms/step - accuracy: 0.8237 - loss: 0.6378 - top3_acc: 0.9464
+Epoch 3: val_accuracy improved from 0.85378 to 0.87203, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 3: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 841s 546ms/step - accuracy: 0.8234 - loss: 0.6584 - top3_acc: 0.9466 - val_accuracy: 0.8720 - val_loss: 0.4118 - val_top3_acc: 0.9686 - learning_rate: 0.0010
+Epoch 4/10
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 517ms/step - accuracy: 0.8356 - loss: 0.6069 - top3_acc: 0.9496
+Epoch 4: val_accuracy did not improve from 0.87203
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 854s 554ms/step - accuracy: 0.8354 - loss: 0.6026 - top3_acc: 0.9518 - val_accuracy: 0.8718 - val_loss: 0.4045 - val_top3_acc: 0.9684 - learning_rate: 0.0010
+Epoch 5/10
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 537ms/step - accuracy: 0.8426 - loss: 0.5771 - top3_acc: 0.9535
+Epoch 5: val_accuracy did not improve from 0.87203
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 885s 574ms/step - accuracy: 0.8430 - loss: 0.5565 - top3_acc: 0.9554 - val_accuracy: 0.8717 - val_loss: 0.4054 - val_top3_acc: 0.9700 - learning_rate: 0.0010
+Epoch 6/10
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 528ms/step - accuracy: 0.8459 - loss: 0.5606 - top3_acc: 0.9595
+Epoch 6: val_accuracy improved from 0.87203 to 0.87386, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 6: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 871s 565ms/step - accuracy: 0.8466 - loss: 0.5716 - top3_acc: 0.9575 - val_accuracy: 0.8739 - val_loss: 0.3970 - val_top3_acc: 0.9657 - learning_rate: 0.0010
+Epoch 7/10
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 530ms/step - accuracy: 0.8497 - loss: 0.5113 - top3_acc: 0.9607
+Epoch 7: val_accuracy improved from 0.87386 to 0.88126, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 7: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 876s 568ms/step - accuracy: 0.8509 - loss: 0.5110 - top3_acc: 0.9610 - val_accuracy: 0.8813 - val_loss: 0.3849 - val_top3_acc: 0.9686 - learning_rate: 0.0010
+Epoch 8/10
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 541ms/step - accuracy: 0.8547 - loss: 0.4836 - top3_acc: 0.9612
+Epoch 8: val_accuracy improved from 0.88126 to 0.89201, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 8: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 893s 579ms/step - accuracy: 0.8558 - loss: 0.4998 - top3_acc: 0.9622 - val_accuracy: 0.8920 - val_loss: 0.3295 - val_top3_acc: 0.9775 - learning_rate: 0.0010
+Epoch 9/10
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 535ms/step - accuracy: 0.8599 - loss: 0.4764 - top3_acc: 0.9647
+Epoch 9: val_accuracy did not improve from 0.89201
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 882s 572ms/step - accuracy: 0.8582 - loss: 0.4875 - top3_acc: 0.9642 - val_accuracy: 0.8913 - val_loss: 0.3372 - val_top3_acc: 0.9738 - learning_rate: 0.0010
+Epoch 10/10
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 533ms/step - accuracy: 0.8608 - loss: 0.4600 - top3_acc: 0.9628
+Epoch 10: val_accuracy did not improve from 0.89201
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 881s 572ms/step - accuracy: 0.8609 - loss: 0.4855 - top3_acc: 0.9644 - val_accuracy: 0.8919 - val_loss: 0.3413 - val_top3_acc: 0.9751 - learning_rate: 0.0010
+Restoring model weights from the end of the best epoch: 8.
+
+
+=== CELL 10: Fine-tune the upper backbone ===
+Epoch 1/20
+2026-07-06 01:49:13.549511: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-07-06 01:49:13.756307: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-07-06 01:49:14.177027: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-07-06 01:49:14.383658: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+ 129/1541 ━━━━━━━━━━━━━━━━━━━━ 12:15 521ms/step - accuracy: 0.7592 - loss: 0.7973 - top3_acc: 0.91532026-07-06 01:50:36.467683: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-07-06 01:50:36.676806: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-07-06 01:50:37.079656: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-07-06 01:50:37.288670: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 550ms/step - accuracy: 0.7666 - loss: 0.8202 - top3_acc: 0.9209
+Epoch 1: val_accuracy improved from None to 0.86899, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 1: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 943s 592ms/step - accuracy: 0.7837 - loss: 0.7622 - top3_acc: 0.9302 - val_accuracy: 0.8690 - val_loss: 0.4075 - val_top3_acc: 0.9673 - learning_rate: 1.0000e-05
+Epoch 2/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 522ms/step - accuracy: 0.8192 - loss: 0.6390 - top3_acc: 0.9450
+Epoch 2: val_accuracy improved from 0.86899 to 0.88055, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 2: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 864s 561ms/step - accuracy: 0.8235 - loss: 0.6084 - top3_acc: 0.9484 - val_accuracy: 0.8806 - val_loss: 0.3721 - val_top3_acc: 0.9726 - learning_rate: 1.0000e-05
+Epoch 3/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 594ms/step - accuracy: 0.8332 - loss: 0.5509 - top3_acc: 0.9532
+Epoch 3: val_accuracy improved from 0.88055 to 0.88471, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 3: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 982s 637ms/step - accuracy: 0.8379 - loss: 0.5341 - top3_acc: 0.9553 - val_accuracy: 0.8847 - val_loss: 0.3521 - val_top3_acc: 0.9745 - learning_rate: 1.0000e-05
+Epoch 4/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 586ms/step - accuracy: 0.8480 - loss: 0.4804 - top3_acc: 0.9596
+Epoch 4: val_accuracy improved from 0.88471 to 0.88937, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 4: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 965s 626ms/step - accuracy: 0.8516 - loss: 0.4825 - top3_acc: 0.9597 - val_accuracy: 0.8894 - val_loss: 0.3354 - val_top3_acc: 0.9757 - learning_rate: 1.0000e-05
+Epoch 5/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 590ms/step - accuracy: 0.8595 - loss: 0.4500 - top3_acc: 0.9627
+Epoch 5: val_accuracy improved from 0.88937 to 0.89576, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 5: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 977s 634ms/step - accuracy: 0.8595 - loss: 0.4385 - top3_acc: 0.9641 - val_accuracy: 0.8958 - val_loss: 0.3148 - val_top3_acc: 0.9780 - learning_rate: 1.0000e-05
+Epoch 6/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 581ms/step - accuracy: 0.8673 - loss: 0.4260 - top3_acc: 0.9647
+Epoch 6: val_accuracy improved from 0.89576 to 0.90043, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 6: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 956s 621ms/step - accuracy: 0.8662 - loss: 0.4322 - top3_acc: 0.9651 - val_accuracy: 0.9004 - val_loss: 0.3051 - val_top3_acc: 0.9787 - learning_rate: 1.0000e-05
+Epoch 7/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 566ms/step - accuracy: 0.8673 - loss: 0.4259 - top3_acc: 0.9674
+Epoch 7: val_accuracy improved from 0.90043 to 0.90154, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 7: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 936s 608ms/step - accuracy: 0.8691 - loss: 0.4160 - top3_acc: 0.9678 - val_accuracy: 0.9015 - val_loss: 0.3016 - val_top3_acc: 0.9780 - learning_rate: 1.0000e-05
+Epoch 8/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 583ms/step - accuracy: 0.8727 - loss: 0.3920 - top3_acc: 0.9683
+Epoch 8: val_accuracy improved from 0.90154 to 0.90337, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 8: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 962s 625ms/step - accuracy: 0.8747 - loss: 0.3935 - top3_acc: 0.9698 - val_accuracy: 0.9034 - val_loss: 0.2978 - val_top3_acc: 0.9793 - learning_rate: 1.0000e-05
+Epoch 9/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 613ms/step - accuracy: 0.8789 - loss: 0.3666 - top3_acc: 0.9694
+Epoch 9: val_accuracy improved from 0.90337 to 0.90631, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 9: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 1024s 664ms/step - accuracy: 0.8794 - loss: 0.3776 - top3_acc: 0.9700 - val_accuracy: 0.9063 - val_loss: 0.2880 - val_top3_acc: 0.9799 - learning_rate: 1.0000e-05
+Epoch 10/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 648ms/step - accuracy: 0.8794 - loss: 0.3726 - top3_acc: 0.9697
+Epoch 10: val_accuracy improved from 0.90631 to 0.90793, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 10: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 1076s 698ms/step - accuracy: 0.8806 - loss: 0.3660 - top3_acc: 0.9717 - val_accuracy: 0.9079 - val_loss: 0.2830 - val_top3_acc: 0.9807 - learning_rate: 1.0000e-05
+Epoch 11/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 602ms/step - accuracy: 0.8841 - loss: 0.3460 - top3_acc: 0.9723
+Epoch 11: val_accuracy improved from 0.90793 to 0.91087, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 11: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 993s 644ms/step - accuracy: 0.8857 - loss: 0.3479 - top3_acc: 0.9732 - val_accuracy: 0.9109 - val_loss: 0.2754 - val_top3_acc: 0.9816 - learning_rate: 1.0000e-05
+Epoch 12/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 585ms/step - accuracy: 0.8873 - loss: 0.3469 - top3_acc: 0.9736
+Epoch 12: val_accuracy improved from 0.91087 to 0.91270, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 12: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 967s 627ms/step - accuracy: 0.8882 - loss: 0.3448 - top3_acc: 0.9748 - val_accuracy: 0.9127 - val_loss: 0.2700 - val_top3_acc: 0.9812 - learning_rate: 1.0000e-05
+Epoch 13/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 580ms/step - accuracy: 0.8897 - loss: 0.3292 - top3_acc: 0.9755
+Epoch 13: val_accuracy improved from 0.91270 to 0.91503, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 13: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 959s 622ms/step - accuracy: 0.8915 - loss: 0.3253 - top3_acc: 0.9750 - val_accuracy: 0.9150 - val_loss: 0.2679 - val_top3_acc: 0.9829 - learning_rate: 1.0000e-05
+Epoch 14/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 589ms/step - accuracy: 0.8887 - loss: 0.3303 - top3_acc: 0.9749
+Epoch 14: val_accuracy improved from 0.91503 to 0.91594, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 14: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 974s 632ms/step - accuracy: 0.8920 - loss: 0.3233 - top3_acc: 0.9759 - val_accuracy: 0.9159 - val_loss: 0.2646 - val_top3_acc: 0.9823 - learning_rate: 1.0000e-05
+Epoch 15/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 592ms/step - accuracy: 0.8943 - loss: 0.3088 - top3_acc: 0.9764
+Epoch 15: val_accuracy did not improve from 0.91594
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 974s 632ms/step - accuracy: 0.8944 - loss: 0.3126 - top3_acc: 0.9773 - val_accuracy: 0.9152 - val_loss: 0.2637 - val_top3_acc: 0.9820 - learning_rate: 1.0000e-05
+Epoch 16/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 572ms/step - accuracy: 0.8964 - loss: 0.3055 - top3_acc: 0.9773
+Epoch 16: val_accuracy improved from 0.91594 to 0.91716, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 16: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 946s 614ms/step - accuracy: 0.8978 - loss: 0.3022 - top3_acc: 0.9779 - val_accuracy: 0.9172 - val_loss: 0.2541 - val_top3_acc: 0.9824 - learning_rate: 1.0000e-05
+Epoch 17/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 582ms/step - accuracy: 0.9017 - loss: 0.2913 - top3_acc: 0.9780
+Epoch 17: val_accuracy improved from 0.91716 to 0.91837, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 17: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 967s 628ms/step - accuracy: 0.9007 - loss: 0.2924 - top3_acc: 0.9779 - val_accuracy: 0.9184 - val_loss: 0.2532 - val_top3_acc: 0.9827 - learning_rate: 1.0000e-05
+Epoch 18/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 600ms/step - accuracy: 0.9003 - loss: 0.2897 - top3_acc: 0.9784
+Epoch 18: val_accuracy improved from 0.91837 to 0.92020, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 18: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 996s 646ms/step - accuracy: 0.9023 - loss: 0.2948 - top3_acc: 0.9788 - val_accuracy: 0.9202 - val_loss: 0.2476 - val_top3_acc: 0.9833 - learning_rate: 1.0000e-05
+Epoch 19/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 604ms/step - accuracy: 0.9059 - loss: 0.2716 - top3_acc: 0.9814
+Epoch 19: val_accuracy improved from 0.92020 to 0.92304, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 19: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 1004s 651ms/step - accuracy: 0.9053 - loss: 0.2793 - top3_acc: 0.9802 - val_accuracy: 0.9230 - val_loss: 0.2418 - val_top3_acc: 0.9835 - learning_rate: 1.0000e-05
+Epoch 20/20
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 0s 604ms/step - accuracy: 0.9068 - loss: 0.2753 - top3_acc: 0.9805
+Epoch 20: val_accuracy improved from 0.92304 to 0.92405, saving model to /kaggle/working/best_model.h5
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Epoch 20: finished saving model to /kaggle/working/best_model.h5
+1541/1541 ━━━━━━━━━━━━━━━━━━━━ 1005s 652ms/step - accuracy: 0.9055 - loss: 0.2829 - top3_acc: 0.9797 - val_accuracy: 0.9241 - val_loss: 0.2397 - val_top3_acc: 0.9837 - learning_rate: 1.0000e-05
+Restoring model weights from the end of the best epoch: 20.
+
+
+=== CELL 11: Plot learning curves ===
+<Figure size 1400x500 with 2 Axes>
+
+=== CELL 12: Evaluate the internal test split ===
+206/206 ━━━━━━━━━━━━━━━━━━━━ 95s 424ms/step
+
+🎯 Internal Test Accuracy: 92.59%
+🎯 Internal Test Top-3 Accuracy: 98.49%
+⚠️ This is an internal test split from the combined dataset.
+   Evaluate separately on independently captured camera images before deployment.
+                                          precision    recall  f1-score   support
+
+Orange___Haunglongbing_(Citrus_greening)      1.000     0.998     0.999       551
+                    Tomato___Target_Spot      0.810     0.971     0.883       140
+                         apple_black_rot      0.984     1.000     0.992        62
+                           apple_healthy      0.982     0.965     0.974       173
+                              apple_rust      0.854     0.921     0.886        38
+                              apple_scab      0.929     0.903     0.915        72
+                       blueberry_healthy      0.909     0.981     0.944       162
+                cassava_bacterial_blight      0.000     0.000     0.000         2
+                 cassava_brown_leaf_spot      0.314     0.762     0.444        21
+                         cassava_healthy      0.586     0.810     0.680        42
+                          cassava_mosaic      0.985     0.700     0.818       190
+                        cassava_root_rot      0.462     0.750     0.571         8
+                          cherry_healthy      0.926     0.956     0.941        91
+                   cherry_powdery_mildew      1.000     1.000     1.000       105
+                        corn_brown_spots      0.489     1.000     0.657        22
+                corn_chlorotic_leaf_spot      0.143     0.667     0.235         3
+                     corn_gray_leaf_spot      0.578     0.825     0.680        63
+                            corn_healthy      0.983     0.863     0.919       131
+                        corn_leaf_blight      0.914     0.636     0.750       283
+                             corn_mildew      0.231     0.750     0.353         4
+                               corn_rust      0.954     0.919     0.936       136
+                             corn_streak      0.615     0.960     0.750        25
+                             corn_stripe      0.565     0.812     0.667        16
+                          corn_yellowing      0.706     0.960     0.814        50
+                         grape_black_rot      0.953     0.968     0.961       126
+                              grape_esca      0.993     1.000     0.996       138
+                           grape_healthy      0.979     0.940     0.959        50
+                       grape_leaf_blight      1.000     1.000     1.000       108
+                    peach_bacterial_spot      0.991     0.991     0.991       230
+                           peach_healthy      0.846     0.936     0.889        47
+                   pepper_bacterial_spot      0.953     0.944     0.949       108
+                          pepper_healthy      0.955     0.980     0.968       152
+                     potato_early_blight      0.939     0.915     0.926       117
+                          potato_healthy      0.875     0.933     0.903        15
+                      potato_late_blight      0.889     0.926     0.907       121
+                       raspberry_healthy      0.940     0.959     0.949        49
+                         soybean_healthy      0.998     0.977     0.987       516
+                   squash_powdery_mildew      0.995     0.980     0.987       197
+                      strawberry_healthy      0.944     0.927     0.936        55
+                  strawberry_leaf_scorch      0.991     1.000     0.996       111
+                   tomato_bacterial_spot      0.976     0.915     0.945       224
+                      tomato_blight_leaf      0.879     0.934     0.906       242
+                      tomato_brown_spots      0.949     0.944     0.947       197
+                     tomato_early_blight      0.885     0.780     0.829       109
+                          tomato_healthy      0.972     0.906     0.938       192
+                        tomato_leaf_mold      0.897     0.923     0.910       104
+                tomato_leaf_mosaic_virus      0.725     0.822     0.771        45
+               tomato_septoria_leaf_spot      0.917     0.912     0.914       193
+                     tomato_spider_mites      0.897     0.935     0.915       168
+                tomato_yellow_leaf_virus      0.991     0.932     0.960       571
+
+                                accuracy                          0.926      6575
+                               macro avg      0.825     0.890     0.843      6575
+                            weighted avg      0.940     0.926     0.929      6575
+
+<Figure size 1600x1400 with 2 Axes>
+
+=== CELL 13: Export TensorFlow Lite ===
+INFO:tensorflow:Assets written to: /tmp/tmpz5zhqk17/assets
+INFO:tensorflow:Assets written to: /tmp/tmpz5zhqk17/assets
+Saved artifact at '/tmp/tmpz5zhqk17'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 224, 224, 3), dtype=tf.float32, name='keras_tensor_238')
+Output Type:
+  TensorSpec(shape=(None, 50), dtype=tf.float32, name=None)
+Captures:
+  132085345459792: TensorSpec(shape=(1, 1, 1, 3), dtype=tf.float32, name=None)
+  132085345463632: TensorSpec(shape=(1, 1, 1, 3), dtype=tf.float32, name=None)
+  132085351460752: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085351463056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085351460944: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085351463824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085351459984: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085351464208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085351464016: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879123408: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085351463440: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085351464400: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879124176: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879125712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879123792: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879125904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879124944: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879123984: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879124752: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879126288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879127248: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879125520: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879127056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879127824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879125136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879126480: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879128208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879127632: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879128976: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879126672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879128400: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879129360: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879129936: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879128592: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879130128: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879127440: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879128784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879131088: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879130704: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879131664: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879130896: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879129168: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879131472: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879132048: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879132624: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879131856: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879129552: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879132432: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879133008: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879133584: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879132816: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879133968: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879130320: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879133392: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879133776: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879132240: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879134544: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879133200: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879135312: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879135504: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879134928: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879134160: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879135888: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879136464: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879135120: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879134736: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879136272: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879136848: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879137424: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879136656: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879137808: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879135696: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879137232: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879137616: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879136080: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879138384: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879137040: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879139152: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879134352: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879138192: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879131280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879138000: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879138768: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879138960: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349664144: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349664336: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132087879138576: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349663184: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349662800: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349664912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349663952: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349663568: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349664720: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349663376: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349665488: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349664528: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349666256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349666448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349665872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349665104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349666832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349667408: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349666064: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349665680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349667216: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349667792: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349668368: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349667600: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349668752: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349666640: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349668176: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349668560: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349667024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349669328: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349667984: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349670096: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349665296: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349669520: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349669904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349670480: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349671056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349670288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349669712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349670864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349671440: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349672016: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349671248: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349672400: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349669136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349671824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349672208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349670672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349672976: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349671632: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349673744: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349673936: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349673360: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349672592: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349674320: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349674896: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349673552: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349673168: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349674704: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349675280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349675856: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349675088: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349676240: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349674128: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349675664: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349676048: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349674512: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349676816: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349675472: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349677584: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349677776: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349677200: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349676432: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349678160: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349678736: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349677392: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349677968: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349678352: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349677008: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349678928: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349678544: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349676624: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085349668944: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346502416: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346502032: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346501840: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346500688: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346501264: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346502992: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346501648: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346501456: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346502800: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346503376: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346503952: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346503184: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346502608: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346503760: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346504336: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346504912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346504144: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346505296: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346501072: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346504720: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346505104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346503568: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346505872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346504528: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346506640: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346506832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346506256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346505488: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346507216: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346507792: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346506448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346506064: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346507600: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346508176: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346508752: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346507984: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346509136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346507024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346508560: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346508944: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346507408: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346509712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346508368: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346510480: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346510672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346510096: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346509328: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346511056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346511632: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346510288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346509904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346511440: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346512016: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346512592: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346511824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346512976: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346510864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346512400: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346512784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346511248: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346513552: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346512208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346514320: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346509520: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346513744: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346514128: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346514704: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346515280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346514512: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346513936: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346515088: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346515664: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346516240: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346515472: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346502224: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346513168: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346516048: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346514896: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346516816: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346515856: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346513360: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085346516432: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345452304: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345452112: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345452880: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345453648: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345454224: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345452496: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345452688: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345454032: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345454608: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345455184: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345454416: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345455568: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345453456: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345454992: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345455376: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345453840: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345456144: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345454800: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345456912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345457104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345456528: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345455760: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345457488: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345458064: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345456720: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345456336: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345457872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345458448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345459024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345458256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345459408: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345457296: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345458832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345459216: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345457680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345459984: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345458640: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345460752: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345460368: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345460560: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345453072: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345461520: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345462096: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345459600: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345455952: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345461904: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345462480: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345463056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345462288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345463440: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345461328: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345462864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345463248: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345461712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345464016: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345462672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345464784: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345461136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345464208: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345464592: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345465168: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345465744: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345466896: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345467088: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085351462288: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085351461136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345466128: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345468240: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345463824: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345467664: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345466512: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345467856: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345467280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  132085345468048: TensorSpec(shape=(), dtype=tf.resource, name=None)
+W0000 00:00:1783322181.765887      23 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1783322181.765943      23 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+I0000 00:00:1783322181.989593      23 mlir_graph_optimization_pass.cc:437] MLIR V1 optimization pass is not enabled
+fully_quantize: 0, inference_type: 6, input_inference_type: FLOAT32, output_inference_type: FLOAT32
+✅ TFLite saved: /kaggle/working/plant_disease_model.tflite
+
+
+=== CELL 14: Export labels and configuration ===
+✅ Labels saved: /kaggle/working/labels.json
+✅ Config saved: /kaggle/working/training_config.json
+
+⚠️ MOBILE INTEGRATION NOTE:
+   EfficientNet preprocess_input is a pass-through function.
+   The model expects raw RGB pixel values in the 0-255 range.
+   Do not divide by 255 or normalize to [-1, 1]; resize and supply RGB
+   as float32 values in [0, 255].
+
+⚠️ DATA ATTRIBUTION: cite PlantDoc (Singh et al., 2020) and
+   FieldPlant (Moupojou et al., 2023); verify terms for each dataset copy.
