@@ -1,14 +1,19 @@
+import logging
+
+logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
+logger = logging.getLogger("plant_disease.training")
+
 """English export of the original Kaggle training workflow. See README before running."""
 
 import os
 
 def inspect_dataset(base_path, max_depth=3, max_items=15):
     print(f'\n{"="*80}')
-    print(f'📁 {base_path}')
+    logger.info(f'{base_path}')
     print(f'{"="*80}')
 
     if not os.path.exists(base_path):
-        print('❌ Path not found!')
+        logger.warning('Path not found!')
         return
 
     for root, dirs, files in os.walk(base_path):
@@ -19,7 +24,7 @@ def inspect_dataset(base_path, max_depth=3, max_items=15):
 
         indent = '  ' * depth
         folder_name = os.path.basename(root) if root != base_path else os.path.basename(base_path)
-        print(f'{indent}📂 {folder_name}/  ({len(dirs)} directories, {len(files)} files)')
+        logger.info(f'{indent} {folder_name}/  ({len(dirs)} directories, {len(files)} files)')
 
         # List subdirectories, which may represent classes.
         if dirs:
@@ -36,9 +41,9 @@ def inspect_dataset(base_path, max_depth=3, max_items=15):
                 ext = os.path.splitext(f)[1].lower()
                 extensions[ext] = extensions.get(ext, 0) + 1
             ext_summary = ', '.join([f'{ext}: {count}' for ext, count in extensions.items()])
-            print(f'{indent}    📄 File types: {ext_summary}')
+            logger.info(f'{indent}     File types: {ext_summary}')
             sample_files = sorted(files)[:3]
-            print(f'{indent}    📄 Example files: {sample_files}')
+            logger.info(f'{indent}     Example files: {sample_files}')
 
 
 # ---------------- USAGE ----------------
@@ -55,7 +60,7 @@ for name, path in DATASET_PATHS.items():
     inspect_dataset(path)
 
 print(f'\n{"="*80}')
-print('✅ Dataset inspection complete.')
+logger.info('Dataset inspection complete.')
 print(f'{"="*80}')
 
 import pandas as pd
@@ -84,13 +89,13 @@ for root_dir in CANDIDATE_ROOTS:
         break
 
 if CSV_PATH is None:
-    print('❌ CSV not found. Check these candidate paths:')
+    logger.warning('CSV not found. Check these candidate paths:')
     for root_dir in CANDIDATE_ROOTS:
         print(f'  {root_dir} -> exists: {os.path.exists(root_dir)}')
     print('\nCheck the mounted FieldPlant dataset path in Kaggle')
     print('and add it to CANDIDATE_ROOTS.')
 else:
-    print(f'✅ CSV found: {CSV_PATH}\n')
+    logger.info(f'CSV found: {CSV_PATH}\n')
 
 if CSV_PATH:
     df = pd.read_csv(CSV_PATH)
@@ -197,7 +202,7 @@ def convert_fieldplant_to_classification():
 
     # ---------------- SUMMARY ----------------
     print(f'\n{"="*60}')
-    print('✅ Conversion complete')
+    logger.info('Conversion complete')
     print(f'{"="*60}')
     print(f'Crops saved: {saved}')
     print(f'Skipped missing images: {skipped_missing}')
@@ -207,7 +212,7 @@ def convert_fieldplant_to_classification():
     for cls, count in sorted(class_counts.items(), key=lambda x: -x[1]):
         print(f'  {cls}: {count}')
 
-    print(f'\n📁 Output directory: {OUTPUT_DIR}')
+    logger.info(f'Output directory: {OUTPUT_DIR}')
     print('Use this directory in the same way as PlantVillage or PlantDoc')
     print('by passing it as base_path to collect_images().')
 
@@ -373,7 +378,7 @@ def collect_images(base_path, dataset_name, class_name_map=None, exclude=None):
     images, labels = [], []
     exclude = exclude or set()
     if not os.path.exists(base_path):
-        print(f'⚠️ {dataset_name} not found: {base_path}')
+        logger.warning(f'{dataset_name} not found: {base_path}')
         return images, labels
 
     for class_name in sorted(os.listdir(base_path)):
@@ -390,7 +395,7 @@ def collect_images(base_path, dataset_name, class_name_map=None, exclude=None):
                 images.append(os.path.join(class_path, img_file))
                 labels.append(final_label)
 
-    print(f'✅ {dataset_name}: {len(images)} images, {len(set(labels))} classes')
+    logger.info(f'{dataset_name}: {len(images)} images, {len(set(labels))} classes')
     return images, labels
 
 
@@ -404,11 +409,11 @@ for imgs, labs in [
     all_images.extend(imgs)
     all_labels.extend(labs)
 
-print(f'\n📊 Total: {len(all_images)} images')
+logger.info(f'Total: {len(all_images)} images')
 
 unique_classes = sorted(list(set(all_labels)))
 NUM_CLASSES = len(unique_classes)
-print(f'🏷️ Total class count: {NUM_CLASSES}')
+logger.info(f'Total class count: {NUM_CLASSES}')
 
 counts = Counter(all_labels)
 print('\nClass distribution (10 least represented classes):')
@@ -618,9 +623,9 @@ y_pred = np.argmax(y_pred_probs, axis=1)
 y_true = test_gen.classes
 
 test_loss, test_acc, test_top3 = model.evaluate(test_gen, verbose=0)
-print(f'\n🎯 Internal Test Accuracy: {test_acc*100:.2f}%')
-print(f'🎯 Internal Test Top-3 Accuracy: {test_top3*100:.2f}%')
-print('⚠️ This is an internal test split from the combined dataset.')
+logger.info(f'Internal Test Accuracy: {test_acc*100:.2f}%')
+logger.info(f'Internal Test Top-3 Accuracy: {test_top3*100:.2f}%')
+logger.warning('This is an internal test split from the combined dataset.')
 print('   Evaluate separately on independently captured camera images before deployment.')
 
 class_names = [idx_to_class[i] for i in range(NUM_CLASSES)]
@@ -661,7 +666,7 @@ tflite_model = converter.convert()
 with open(TFLITE_PATH, 'wb') as f:
     f.write(tflite_model)
 
-print(f'✅ TFLite saved: {TFLITE_PATH}')
+logger.info(f'TFLite saved: {TFLITE_PATH}')
 
 # ============================================================
 # SAVE LABELS AND TRAINING CONFIGURATION
@@ -681,12 +686,12 @@ training_config = {
 with open(CONFIG_PATH, 'w', encoding='utf-8') as f:
     json.dump(training_config, f, ensure_ascii=False, indent=2)
 
-print(f'✅ Labels saved: {LABELS_PATH}')
-print(f'✅ Config saved: {CONFIG_PATH}')
-print('\n⚠️ MOBILE INTEGRATION NOTE:')
+logger.info(f'Labels saved: {LABELS_PATH}')
+logger.info(f'Config saved: {CONFIG_PATH}')
+logger.warning('MOBILE INTEGRATION NOTE:')
 print('   EfficientNet preprocess_input is a pass-through function.')
 print('   The model expects raw RGB pixel values in the 0-255 range.')
 print('   Do not divide by 255 or normalize to [-1, 1]; resize and supply RGB')
 print('   as float32 values in [0, 255].')
-print('\n⚠️ DATA ATTRIBUTION: cite PlantDoc (Singh et al., 2020) and')
+logger.warning('DATA ATTRIBUTION: cite PlantDoc (Singh et al., 2020) and')
 print('   FieldPlant (Moupojou et al., 2023); verify terms for each dataset copy.')
