@@ -26,7 +26,7 @@ def inspect_dataset(base_path, max_depth=3, max_items=15):
         folder_name = os.path.basename(root) if root != base_path else os.path.basename(base_path)
         logger.info(f'{indent} {folder_name}/  ({len(dirs)} directories, {len(files)} files)')
 
-        # List subdirectories, which may represent classes.
+
         if dirs:
             shown_dirs = sorted(dirs)[:max_items]
             for d in shown_dirs:
@@ -34,7 +34,7 @@ def inspect_dataset(base_path, max_depth=3, max_items=15):
             if len(dirs) > max_items:
                 print(f'{indent}    └── ... and {len(dirs) - max_items} more directories')
 
-        # Summarize file extensions.
+
         if files:
             extensions = {}
             for f in files:
@@ -45,10 +45,6 @@ def inspect_dataset(base_path, max_depth=3, max_items=15):
             sample_files = sorted(files)[:3]
             logger.info(f'{indent}     Example files: {sample_files}')
 
-
-# ---------------- USAGE ----------------
-# After adding Kaggle inputs, update these paths
-# to match the mounted dataset locations.
 
 DATASET_PATHS = {
     'PlantVillage': '/kaggle/input/datasets/abdallahalidev/plantvillage-dataset',
@@ -68,13 +64,13 @@ import os
 
 CSV_PATH = None
 
-# Candidate roots, including nested Kaggle mount paths.
+
 CANDIDATE_ROOTS = [
     '/kaggle/input/fieldplant',
     '/kaggle/input/datasets/bloox2/fieldplant',
 ]
 
-# Search recursively for an annotation CSV under each root.
+
 for root_dir in CANDIDATE_ROOTS:
     if not os.path.exists(root_dir):
         continue
@@ -113,21 +109,20 @@ import pandas as pd
 import os
 from PIL import Image
 
-# ---------------- CONFIG ----------------
+
 CSV_PATH = '/kaggle/input/datasets/bloox2/fieldplant/train/_annotations.csv'
 IMAGES_DIR = '/kaggle/input/datasets/bloox2/fieldplant/train'
 OUTPUT_DIR = '/kaggle/working/fieldplant_classification'
 
-MIN_CROP_SIZE = 20   # Skip boxes smaller than this pixel threshold.
-PADDING_RATIO = 0.05  # Add five percent padding around each bounding box.
+MIN_CROP_SIZE = 20   
+PADDING_RATIO = 0.05  
 
-# ---------------- CLASS NAME SANITIZATION ----------------
+
 def sanitize_class_name(name):
-    # Create a filesystem-safe class directory name.
+
     return name.strip().replace(' ', '_').replace('/', '_')
 
 
-# ---------------- MAIN CONVERSION ----------------
 def convert_fieldplant_to_classification():
     df = pd.read_csv(CSV_PATH)
     print(f'Total annotations: {len(df)}')
@@ -142,7 +137,7 @@ def convert_fieldplant_to_classification():
     skipped_error = 0
     saved = 0
 
-    # Track multiple crops from the same source image.
+
     crop_counter = {}
 
     for idx, row in df.iterrows():
@@ -155,7 +150,7 @@ def convert_fieldplant_to_classification():
             skipped_missing += 1
             continue
 
-        # Validate bounding-box dimensions.
+
         box_w = xmax - xmin
         box_h = ymax - ymin
         if box_w < MIN_CROP_SIZE or box_h < MIN_CROP_SIZE:
@@ -167,7 +162,7 @@ def convert_fieldplant_to_classification():
                 img = img.convert('RGB')
                 img_w, img_h = img.size
 
-                # Pad the box and clip it to image boundaries.
+
                 pad_x = int(box_w * PADDING_RATIO)
                 pad_y = int(box_h * PADDING_RATIO)
 
@@ -178,11 +173,11 @@ def convert_fieldplant_to_classification():
 
                 cropped = img.crop((crop_xmin, crop_ymin, crop_xmax, crop_ymax))
 
-                # Create the class directory.
+
                 class_dir = os.path.join(OUTPUT_DIR, class_name)
                 os.makedirs(class_dir, exist_ok=True)
 
-                # Use unique names for multiple crops from one image.
+
                 base_name = os.path.splitext(filename)[0]
                 crop_counter[base_name] = crop_counter.get(base_name, 0) + 1
                 out_name = f'{base_name}_crop{crop_counter[base_name]}.jpg'
@@ -200,7 +195,7 @@ def convert_fieldplant_to_classification():
         if (idx + 1) % 1000 == 0:
             print(f'Processed: {idx + 1}/{len(df)}')
 
-    # ---------------- SUMMARY ----------------
+
     print(f'\n{"="*60}')
     logger.info('Conversion complete')
     print(f'{"="*60}')
@@ -244,9 +239,7 @@ from collections import Counter
 print(f'TensorFlow: {tf.__version__}')
 print(f'GPU: {tf.config.list_physical_devices("GPU")}')
 
-# ============================================================
-# CONFIG
-# ============================================================
+
 PLANTVILLAGE_PATH = '/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color'
 FIELDPLANT_PATH = '/kaggle/working/fieldplant_classification'
 PLANTDOC_TRAIN_PATH = '/kaggle/input/datasets/nirmalsankalana/plantdoc-dataset/train'
@@ -269,11 +262,9 @@ TEST_SPLIT = 0.10
 SEED = 42
 CONFIDENCE_THRESHOLD = 0.65
 
-# ============================================================
-# CLASS MAPPING ACROSS THE THREE DATASET SOURCES
-# ============================================================
+
 CLASS_NAME_MAP = {
-    # ---------------- PlantVillage ----------------
+
     'Corn_(maize)___Northern_Leaf_Blight': 'corn_leaf_blight',
     'Corn_(maize)___healthy': 'corn_healthy',
     'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': 'corn_gray_leaf_spot',
@@ -311,7 +302,7 @@ CLASS_NAME_MAP = {
     'Grape___Esca_(Black_Measles)': 'grape_esca',
     'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': 'grape_leaf_blight',
 
-    # ---------------- FieldPlant ----------------
+
     'Corn_leaf_blight': 'corn_leaf_blight',
     'Corn_Healthy': 'corn_healthy',
     'Corn_Gray_leaf_spot': 'corn_gray_leaf_spot',
@@ -333,7 +324,7 @@ CLASS_NAME_MAP = {
     'Cassava_Root_Rot': 'cassava_root_rot',
     'Cassava_Bacterial_Blight': 'cassava_bacterial_blight',
 
-    # ---------------- PlantDoc ----------------
+
     'Apple_Scab_Leaf': 'apple_scab',
     'Apple_leaf': 'apple_healthy',
     'Apple_rust_leaf': 'apple_rust',
@@ -359,7 +350,7 @@ CLASS_NAME_MAP = {
     'grape_leaf_black_rot': 'grape_black_rot',
 }
 
-# Classes excluded by the original experiment configuration.
+
 EXCLUDE_CLASSES = {
     'Corn_Charcoal',
     'Corn_Violet_Decoloration',
@@ -371,9 +362,6 @@ EXCLUDE_CLASSES = {
 }
 
 
-# ============================================================
-# IMAGE COLLECTION
-# ============================================================
 def collect_images(base_path, dataset_name, class_name_map=None, exclude=None):
     images, labels = [], []
     exclude = exclude or set()
@@ -421,9 +409,6 @@ for cls, count in sorted(counts.items(), key=lambda x: x[1])[:10]:
     print(f'  {cls}: {count}')
 
 
-# ============================================================
-# SPLIT
-# ============================================================
 df = pd.DataFrame({'filepath': all_images, 'label': all_labels})
 
 train_val_df, test_df = train_test_split(
@@ -438,9 +423,7 @@ train_df, val_df = train_test_split(
 
 print(f'\nTrain: {len(train_df)} | Val: {len(val_df)} | Test: {len(test_df)}')
 
-# ============================================================
-# GENERATORS: EfficientNet preprocessing without external rescaling
-# ============================================================
+
 train_datagen = ImageDataGenerator(
     preprocessing_function=preprocess_input,
     rotation_range=30,
@@ -475,9 +458,7 @@ test_gen = make_generator(val_test_datagen, test_df, shuffle=False)
 class_indices = train_gen.class_indices
 idx_to_class = {v: k for k, v in class_indices.items()}
 
-# ============================================================
-# BALANCED CLASS WEIGHTS WITHOUT OVERSAMPLING
-# ============================================================
+
 class_weights = compute_class_weight(
     class_weight='balanced',
     classes=np.array(list(class_indices.values())),
@@ -485,9 +466,7 @@ class_weights = compute_class_weight(
 )
 class_weight_dict = dict(enumerate(class_weights))
 
-# ============================================================
-# MODEL
-# ============================================================
+
 def build_model(num_classes, trainable_base=False):
     base_model = EfficientNetB0(
         weights='imagenet',
@@ -516,9 +495,7 @@ model.compile(
 )
 model.summary()
 
-# ============================================================
-# STAGE 1: Frozen pretrained backbone
-# ============================================================
+
 callbacks_1 = [
     EarlyStopping(monitor='val_accuracy', patience=5, restore_best_weights=True, verbose=1),
     ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=3, min_lr=1e-7, verbose=1),
@@ -535,7 +512,6 @@ history_1 = model.fit(
 )
 
 
-
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -546,13 +522,6 @@ from tensorflow import keras
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau, ModelCheckpoint
 from sklearn.metrics import classification_report, confusion_matrix
 
-# ============================================================
-# STAGE 2: Fine-tuning
-# ============================================================
-# This cell depends on the model, generators, histories,
-# model, base_model, train_gen, val_gen, test_gen, history_1,
-# MODEL_PATH, WORK_DIR, NUM_CLASSES, idx_to_class, class_weight_dict
-# and configuration created earlier in the same session.
 
 LR_2 = 1e-5
 EPOCHS_2 = 20
@@ -584,10 +553,6 @@ history_2 = model.fit(
 )
 
 
-
-# ============================================================
-# TRAINING CURVES
-# ============================================================
 def plot_history(h1, h2):
     acc = h1.history['accuracy'] + h2.history['accuracy']
     val_acc = h1.history['val_accuracy'] + h2.history['val_accuracy']
@@ -613,9 +578,7 @@ def plot_history(h1, h2):
 
 plot_history(history_1, history_2)
 
-# ============================================================
-# INTERNAL TEST EVALUATION
-# ============================================================
+
 model.load_weights(MODEL_PATH)
 test_gen.reset()
 y_pred_probs = model.predict(test_gen, verbose=1)
@@ -644,9 +607,7 @@ plt.tight_layout()
 plt.savefig(os.path.join(WORK_DIR, 'confusion_matrix.png'), dpi=150, bbox_inches='tight')
 plt.show()
 
-# ============================================================
-# TFLITE EXPORT
-# ============================================================
+
 def representative_dataset():
     val_gen.reset()
     for _ in range(100):
@@ -668,9 +629,7 @@ with open(TFLITE_PATH, 'wb') as f:
 
 logger.info(f'TFLite saved: {TFLITE_PATH}')
 
-# ============================================================
-# SAVE LABELS AND TRAINING CONFIGURATION
-# ============================================================
+
 with open(LABELS_PATH, 'w', encoding='utf-8') as f:
     json.dump(idx_to_class, f, ensure_ascii=False, indent=2)
 

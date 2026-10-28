@@ -22,7 +22,7 @@ Metrics are from saved notebook outputs, not a new training run or a camera depl
 
 ## Application experience
 
-The application uses a captured leaf image to identify one of the supported plant/condition combinations. A label such as `tomato_early_blight` can be displayed as **Tomato — Early blight**, while `apple_healthy` can be displayed as **Apple — Healthy**. Plant identity and condition are decoded from the same classification result; this model does not have separate species and disease prediction heads.
+The application uses a captured leaf image to identify one of the supported plant/condition combinations. A label such as `tomato_early_blight` can be displayed as **Tomato, Early blight**, while `apple_healthy` can be displayed as **Apple, Healthy**. Plant identity and condition are decoded from the same classification result; this model does not have separate species and disease prediction heads.
 
 ```mermaid
 flowchart LR
@@ -89,13 +89,13 @@ Both split operations are stratified with `random_state=42`. Both supplied Plant
 
 ## Training workflow
 
-1. **Prepare data and labels:** inspect dataset layouts, convert FieldPlant boxes to crops, harmonize labels, and build the pooled image table.
-2. **Augment training images:** rotate up to 30 degrees, shift horizontally/vertically by 0.15, apply shear 0.15, zoom 0.20, horizontal flips, and brightness changes from 0.7 to 1.3. Validation and test generators do not use these random augmentations.
-3. **Balance the training loss:** compute balanced class weights from training labels, without oversampling.
-4. **Train the head:** freeze the pretrained backbone and train for **10 epochs**, using Adam at **1e-3**.
-5. **Fine-tune upper layers:** mark the backbone trainable, freeze all but its last **30 layers**, recompile with Adam at **1e-5**, and train for **20 more epochs**.
-6. **Select and evaluate the checkpoint:** monitor validation accuracy, reload `best_model.h5`, and evaluate the internal test split.
-7. **Export for integration:** convert to TensorFlow Lite and save labels/configuration for the app.
+Prepare data and labels: inspect dataset layouts, convert FieldPlant boxes to crops, harmonize labels, and build the pooled image table. Augment training images: rotate up to 30 degrees, shift horizontally/vertically by 0.15, apply shear 0.15, zoom 0.20, horizontal flips, and brightness changes from 0.7 to 1.3. Validation and test generators do not use these random augmentations.
+
+Balance the training loss: compute balanced class weights from training labels, without oversampling. Train the head: freeze the pretrained backbone and train for **10 epochs**, using Adam at **1e-3**.
+
+Fine-tune upper layers: mark the backbone trainable, freeze all but its last **30 layers**, recompile with Adam at **1e-5**, and train for **20 more epochs**. Select and evaluate the checkpoint: monitor validation accuracy, reload `best_model.h5`, and evaluate the internal test split.
+
+Export for integration: convert to TensorFlow Lite and save labels/configuration for the app.
 
 The loss is categorical cross-entropy, batch size is **32**, and metrics include accuracy and Top-3 accuracy. Both stages use early stopping, learning-rate reduction, and checkpoint callbacks. The recorded environment reports **TensorFlow 2.20.0** and an NVIDIA Tesla P100 GPU.
 
@@ -123,10 +123,9 @@ The notebook records successful export of `plant_disease_model.tflite`, `labels.
 
 For this Keras EfficientNet model:
 
-- Convert the image to **RGB** and resize it to **224 × 224**.
-- Supply a batch with shape **[1, 224, 224, 3]**, using **float32 RGB values in [0, 255]**.
-- Do not additionally divide by 255 or normalize to [-1, 1]; the Keras model includes its own input rescaling. This convention is confirmed by [Keras](https://keras.io/api/applications/efficientnet/efficientnet_models/).
-- Read the 50 output scores using the exact export label order and decode the plant/condition label for display.
+Convert the image to **RGB** and resize it to **224 × 224**. Supply a batch with shape **[1, 224, 224, 3]**, using **float32 RGB values in [0, 255]**.
+
+Do not additionally divide by 255 or normalize to [-1, 1]; the Keras model includes its own input rescaling. This convention is confirmed by [Keras](https://keras.io/api/applications/efficientnet/efficientnet_models/). Read the 50 output scores using the exact export label order and decode the plant/condition label for display.
 
 The converter uses `Optimize.DEFAULT` and representative validation images. Its saved log reports float32 input and output. It is therefore not described here as a fully integer INT8 model. TFLite accuracy and device performance were not evaluated in the supplied notebook.
 
@@ -158,20 +157,19 @@ The notebook's inline outputs were cleared to remove untranslated figures; the t
 
 ## Evaluation limits and next experiments
 
-- **Group related crops before splitting:** multiple FieldPlant crops can come from the same source image, while this experiment splits crop/image records. Related images could therefore cross partitions. Rebuild the split using source-image groups and check duplicate/near-duplicate files across datasets.
-- **Test camera generalization independently:** the 92.59% result belongs to a pooled internal split, dominated by PlantVillage records. It is not evidence of equal performance on new camera images or on each source separately.
-- **Review the label taxonomy:** unmatched source names are retained as-is; two labels remain in their original PlantVillage naming style. Some mapped categories may differ in meaning. Verify label equivalence and healthy-class assumptions before deployment.
-- **Review fine-tuning behavior:** the backbone call is built with `training=False` in stage 1 and reused in stage 2. This retains inference behavior for training-sensitive layers; review BatchNormalization/dropout behavior in further experiments rather than claiming all backbone behavior changes in stage 2.
-- **Validate application thresholds:** 0.65 is configured but not selected through a recorded calibration or rejection analysis. Unsupported plants, poor framing, and multiple leaves need their own app-level handling.
-- **Measure the exported model:** compare Keras and TFLite predictions and benchmark latency, model size, and memory on target devices before making deployment-performance claims.
+Group related crops before splitting: multiple FieldPlant crops can come from the same source image, while this experiment splits crop/image records. Related images could therefore cross partitions. Rebuild the split using source-image groups and check duplicate/near-duplicate files across datasets. Test camera generalization independently: the 92.59% result belongs to a pooled internal split, dominated by PlantVillage records. It is not evidence of equal performance on new camera images or on each source separately.
+
+Review the label taxonomy: unmatched source names are retained as-is; two labels remain in their original PlantVillage naming style. Some mapped categories may differ in meaning. Verify label equivalence and healthy-class assumptions before deployment. Review fine-tuning behavior: the backbone call is built with `training=False` in stage 1 and reused in stage 2. This retains inference behavior for training-sensitive layers; review BatchNormalization/dropout behavior in further experiments rather than claiming all backbone behavior changes in stage 2.
+
+Validate application thresholds: 0.65 is configured but not selected through a recorded calibration or rejection analysis. Unsupported plants, poor framing, and multiple leaves need their own app-level handling. Measure the exported model: compare Keras and TFLite predictions and benchmark latency, model size, and memory on target devices before making deployment-performance claims.
 
 ## Dataset sources and references
 
 The dataset copies mounted in the experiment are:
 
-- [PlantVillage Dataset on Kaggle](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset); [PlantVillage source repository](https://github.com/spMohanty/PlantVillage-Dataset).
-- [FieldPlant on Kaggle](https://www.kaggle.com/datasets/bloox2/fieldplant); Moupojou et al., *FieldPlant: A Dataset of Field Plant Images for Plant Disease Detection and Classification With Deep Learning* (2023), [DOI: 10.1109/ACCESS.2023.3263042](https://doi.org/10.1109/ACCESS.2023.3263042).
-- [PlantDoc dataset copy on Kaggle](https://www.kaggle.com/datasets/nirmalsankalana/plantdoc-dataset); Singh et al., *PlantDoc: A Dataset for Visual Plant Disease Detection* (2020), [original repository](https://github.com/pratikkayal/PlantDoc-Dataset), [DOI: 10.1145/3371158.3371196](https://doi.org/10.1145/3371158.3371196).
+[PlantVillage Dataset on Kaggle](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset); [PlantVillage source repository](https://github.com/spMohanty/PlantVillage-Dataset). [FieldPlant on Kaggle](https://www.kaggle.com/datasets/bloox2/fieldplant); Moupojou et al., *FieldPlant: A Dataset of Field Plant Images for Plant Disease Detection and Classification With Deep Learning* (2023), [DOI: 10.1109/ACCESS.2023.3263042](https://doi.org/10.1109/ACCESS.2023.3263042).
+
+[PlantDoc dataset copy on Kaggle](https://www.kaggle.com/datasets/nirmalsankalana/plantdoc-dataset); Singh et al., *PlantDoc: A Dataset for Visual Plant Disease Detection* (2020), [original repository](https://github.com/pratikkayal/PlantDoc-Dataset), [DOI: 10.1145/3371158.3371196](https://doi.org/10.1145/3371158.3371196).
 
 Dataset terms belong to their respective providers. Raw dataset images are not redistributed in this repository. The early inspection cell accidentally points its PlantDoc entry at FieldPlant; the training configuration uses the separate PlantDoc train/test directories shown above.
 
